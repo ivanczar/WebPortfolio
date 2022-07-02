@@ -38,12 +38,14 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 100px;
   text-align: center;
+
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -71,7 +73,7 @@ export const HeroP = styled.p`
 `;
 
 export const SocialsWrapper = styled.div`
-  margin-top: 20%;
+  margin-top: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,11 +1,15 @@
 import React from "react";
-import { InfoContainer, InfoWrapper, Heading, Subtitle } from "./InfoElements";
-
+import { InfoContainer, InfoWrapper, Heading, Subtitle, ProfilePic, ProfilePicWrapper } from "./InfoElements";
+import Picture from "../../images/profilePic.jpeg";
 const InfoSection = ({ id, heading, text }) => {
   return (
     <>
       <InfoContainer id="about">
+
         <InfoWrapper>
+        <ProfilePicWrapper>
+          <ProfilePic src={Picture}/>
+        </ProfilePicWrapper>
           <Heading>ABOUT</Heading>
           <Subtitle>
             I am a full-time Software Engineering student with experience
@@ -20,6 +24,7 @@ const InfoSection = ({ id, heading, text }) => {
             thrive in team environments where time is of the essence.
           </Subtitle>
         </InfoWrapper>
+ 
       </InfoContainer>
     </>
   );
