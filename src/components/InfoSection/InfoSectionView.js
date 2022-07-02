@@ -1,6 +1,7 @@
 import React from "react";
-import { InfoContainer, InfoWrapper, Heading, Subtitle, ProfilePic, ProfilePicWrapper } from "./InfoElements";
+import { InfoContainer, InfoWrapper, Heading, Subtitle, ProfilePic, ProfilePicWrapper, ArrowPic } from "./InfoElements";
 import Picture from "../../images/profilePic.jpeg";
+import Arrow from "../../images/arrow-me.png";
 const InfoSection = ({ id, heading, text }) => {
   return (
     <>
@@ -8,6 +9,7 @@ const InfoSection = ({ id, heading, text }) => {
 
         <InfoWrapper>
         <ProfilePicWrapper>
+          <ArrowPic src={Arrow}/>
           <ProfilePic src={Picture}/>
         </ProfilePicWrapper>
           <Heading>ABOUT</Heading>

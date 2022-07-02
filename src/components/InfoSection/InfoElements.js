@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#000")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -36,27 +36,37 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-display: flex;
+  display: flex;
   font-size: 20px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
-
-  @media screen and (max-width: 480px) {
-    text-align: justify;
-    /* text-justify: inter-word; */
-  }
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 `;
 
 export const ProfilePicWrapper = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
-  
+  margin-left: 60%;
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+  }
+`;
+
+export const ArrowPic = styled.img`
+  padding-bottom: 10px;
+  height: 100px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const ProfilePic = styled.img`
-border-radius: 100%;
-height: 200px;
-margin-left: 60%;
-/* margin-top: 20px; */
+  border-radius: 100%;
 
+  height: 200px;
+
+  /* margin-top: 20px; */
 `;
