@@ -17,7 +17,7 @@ const Navbar = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/"> Ivan Czar</NavLogo>
+          <NavLogo to="/"> Auckland, New Zealand</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

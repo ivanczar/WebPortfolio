@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import {MdKeyboardArrowRight, MdArrowForward} from "react-icons/md";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { Link as LinkR } from "react-router-dom";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -40,48 +41,85 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-color: #fff;
-font-size: 100px;
-text-align: center;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
 
-@media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 40px;
-}
+  }
 
-@media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     font-size: 32px;
-}
+  }
 `;
 
 export const HeroP = styled.p`
+  margin-top: 24px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  max-width: 600px;
 
-margin-top: 24px;
-color: #fff;
-font-size: 24px;
-text-align: center;
-max-width: 600px;
-
-@media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 24px;
-}
+  }
 
-@media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     font-size: 18px;
-}
-`
-export const HeroBtnWrapper = styled.div`
+  }
+`;
 
-margin-top:32px;
-display:flex;
+export const SocialsWrapper = styled.div`
+margin-top: 20%;
+display: flex;
 flex-direction: column;
 align-items: center;
-`
+
+@media screen and (max-width: 480px) {
+    padding-top: 40%;
+}
+`;
+
+export const SocialsIcons = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #01bf71;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+}
+`;
+
+export const SocialsText = styled.p`
+  display: flex;
+  padding-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #01bf71;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+}
+`;
+
+export const FaGithubLink = styled(LinkR)`
+  
+`;
+export const HeroBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 export const ArrowForward = styled(MdArrowForward)`
-margin-left: 8px;
-font-size: 20px;
-`
+  margin-left: 8px;
+  font-size: 20px;
+`;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
-margin-left: 8px;
-font-size: 20px;
-`
+  margin-left: 8px;
+  font-size: 20px;
+`;

@@ -1,6 +1,17 @@
 import React from "react";
-import Video from "../../videos/HeroBg.mp4";
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP } from "./HeroElements";
+// import Video from "../../videos/HeroBg.mp4";
+import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  SocialsWrapper,
+  SocialsIcons,
+  SocialsText,
+} from "./HeroElements";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -11,8 +22,16 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Ivan Czar</HeroH1>
         <HeroP>Software Engineer Graduate</HeroP>
-        {/* Social Media links here */}
       </HeroContent>
+      <SocialsWrapper>
+        <SocialsIcons>
+          <FaGithub to={{ pathname: `https://sjmmot.bookingcommerce.com`}}  />
+          <FaLinkedin to={{ pathname: `https://sjmmot.bookingcommerce.com`}} />
+        </SocialsIcons>
+        <SocialsText>
+          Connect With me!
+        </SocialsText>
+      </SocialsWrapper>
     </HeroContainer>
   );
 };
