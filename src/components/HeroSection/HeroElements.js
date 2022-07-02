@@ -71,43 +71,46 @@ export const HeroP = styled.p`
 `;
 
 export const SocialsWrapper = styled.div`
-margin-top: 20%;
-display: flex;
-flex-direction: column;
-align-items: center;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     padding-top: 40%;
-}
+  }
 `;
 
 export const SocialsIcons = styled.div`
   display: flex;
   flex-direction: row;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: #01bf71;
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
-}
 `;
 
 export const SocialsText = styled.p`
-  display: flex;
+  /* display: flex; */
   padding-top: 10px;
   font-size: 1rem;
   cursor: pointer;
-  color: #01bf71;
+  color: #5865F2;
 
   @media screen and (max-width: 480px) {
     font-size: 1rem;
-}
+  }
 `;
 
-export const FaGithubLink = styled(LinkR)`
-  
+export const SocialsLink = styled(LinkR)`
+  color: #fff;
+
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
+
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;

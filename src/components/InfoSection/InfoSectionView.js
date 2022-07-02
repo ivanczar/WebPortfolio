@@ -1,5 +1,5 @@
 import React from "react";
-import { InfoContainer, InfoWrapper, Heading, Subtitle} from "./InfoElements";
+import { InfoContainer, InfoWrapper, Heading, Subtitle } from "./InfoElements";
 
 const InfoSection = ({ id, heading, text }) => {
   return (

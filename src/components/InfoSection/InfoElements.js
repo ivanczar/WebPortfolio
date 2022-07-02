@@ -35,9 +35,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  /* max-width: 440px; */
   font-size: 20px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
-

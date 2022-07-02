@@ -10,8 +10,9 @@ import {
   SocialsWrapper,
   SocialsIcons,
   SocialsText,
+  SocialsLink,
 } from "./HeroElements";
-import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -25,12 +26,14 @@ const HeroSection = () => {
       </HeroContent>
       <SocialsWrapper>
         <SocialsIcons>
-          <FaGithub to={{ pathname: `https://sjmmot.bookingcommerce.com`}}  />
-          <FaLinkedin to={{ pathname: `https://sjmmot.bookingcommerce.com`}} />
+          <SocialsLink to="/resume">
+            <FaGithub></FaGithub>
+          </SocialsLink>
+          <SocialsLink to="/resume">
+            <FaLinkedin></FaLinkedin>
+          </SocialsLink>
         </SocialsIcons>
-        <SocialsText>
-          Connect With me!
-        </SocialsText>
+        <SocialsText>Connect With me!</SocialsText>
       </SocialsWrapper>
     </HeroContainer>
   );
