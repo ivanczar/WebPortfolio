@@ -1,7 +1,7 @@
 import React from "react";
 import { InfoContainer, InfoWrapper, Heading, Subtitle, ProfilePic, ProfilePicWrapper, ArrowPic } from "./InfoElements";
-import Picture from "../../images/profilePic.jpeg";
-import Arrow from "../../images/arrow-me.png";
+import Picture from "../../images/about/profilePic.jpeg";
+import Arrow from "../../images/about/arrow-me.png";
 const InfoSection = ({ id, heading, text }) => {
   return (
     <>
