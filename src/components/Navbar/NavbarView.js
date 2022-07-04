@@ -36,7 +36,7 @@ const NavbarView = ({toggle}) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/resume.pdf" target="_blank" download>Resume</NavBtnLink>
+            <NavBtnLink to="/IvanCzar_Resume.pdf" target="_blank" download>Resume</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

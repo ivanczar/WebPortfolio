@@ -19,8 +19,6 @@ const ProjectsSectionView = () => {
           {/* <ChipsContainer></ChipsContainer> */}
           <CardsContainer>
             <Card/>
-            <Card/>
-            <Card/>
   
           </CardsContainer>
         </ProjectsWrapper>

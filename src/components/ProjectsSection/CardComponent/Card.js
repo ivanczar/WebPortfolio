@@ -6,6 +6,8 @@ import {
   CardText,
   TechIconWrapper,
   TechIcon,
+  OpenIconWrapper,
+  CardContentWrapper
 } from "./CardElements";
 import { MdOpenInNew } from "react-icons/md";
 import logo from "../../../images/projects/sporthub.png";
@@ -14,9 +16,12 @@ const Card = () => {
   return (
     <>
       <CardContainer>
-        <MdOpenInNew src={MdOpenInNew}/>
+        <OpenIconWrapper>
+          <MdOpenInNew src={MdOpenInNew} />
+        </OpenIconWrapper>
 
-        
+<CardContentWrapper>
+
         <CardLogo src={logo}></CardLogo>
         <Heading>SportsHub</Heading>
         <CardText>
@@ -25,13 +30,14 @@ const Card = () => {
           and customize your profile.
         </CardText>
         <TechIconWrapper>
-          Techs i used:       
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"/>
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+          
+          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
         </TechIconWrapper>
+</CardContentWrapper>
       </CardContainer>
     </>
   );

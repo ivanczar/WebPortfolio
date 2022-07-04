@@ -13,6 +13,7 @@ import {
   SocialsLink,
 } from "./HeroElements";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const HeroSectionView = () => {
   return (
@@ -31,6 +32,9 @@ const HeroSectionView = () => {
           </SocialsLink>
           <SocialsLink to="/resume">
             <FaLinkedin></FaLinkedin>
+          </SocialsLink>
+          <SocialsLink to="/resume">
+            <AiOutlineMail></AiOutlineMail>
           </SocialsLink>
         </SocialsIcons>
         <SocialsText>Connect With me!</SocialsText>
