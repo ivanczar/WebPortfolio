@@ -20,8 +20,6 @@ width: 100%;
 `;
 
 export const OpenIconWrapper = styled.div`
-  
-
     
 `;
 
@@ -34,7 +32,7 @@ export const CardLogo = styled.img`
 export const Heading = styled.h1`
 
   font-size: 30px;
-  color: #5865F2;
+  color: #fff;
   margin-top: -60px;
 `;
 
@@ -46,12 +44,12 @@ export const TechIconWrapper = styled.div`
 display: flex;
     width: 100%;
     justify-content: space-evenly;
+   
 
     
 `;
 
 export const TechIcon = styled.img`
     height: 30px;
-    
 `;
 

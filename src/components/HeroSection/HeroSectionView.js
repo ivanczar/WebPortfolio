@@ -2,8 +2,6 @@ import React from "react";
 // import Video from "../../videos/HeroBg.mp4";
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -18,22 +16,19 @@ import { AiOutlineMail } from "react-icons/ai";
 const HeroSectionView = () => {
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
-      </HeroBg>
       <HeroContent>
         <HeroH1>Ivan Czar</HeroH1>
-        <HeroP>Software Engineer Graduate</HeroP>
+        <HeroP>Software Engineering Graduate</HeroP>
       </HeroContent>
       <SocialsWrapper>
         <SocialsIcons>
-          <SocialsLink to="/resume">
+          <SocialsLink href="https://github.com/ivanczar" target="_blank" rel='noreferrer'>
             <FaGithub></FaGithub>
           </SocialsLink>
-          <SocialsLink to="/resume">
+          <SocialsLink href="https://www.linkedin.com/in/ivanczar" target="_blank" rel='noreferrer'>
             <FaLinkedin></FaLinkedin>
           </SocialsLink>
-          <SocialsLink to="/resume">
+          <SocialsLink href="mailto:ivanczar2013@gmail.com">
             <AiOutlineMail></AiOutlineMail>
           </SocialsLink>
         </SocialsIcons>
