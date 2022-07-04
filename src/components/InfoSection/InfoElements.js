@@ -20,6 +20,7 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   /* padding: 0 24px; */
   justify-content: center;
+  padding: 20px;
 `;
 
 export const Heading = styled.h1`

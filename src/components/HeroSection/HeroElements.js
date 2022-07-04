@@ -92,5 +92,11 @@ export const SocialsLink = styled.a`
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
   }
+  &:hover {
+    transition: all 0.1s ease-in-out;
+color: #5865F2;
+
+
+  }
 `;
 

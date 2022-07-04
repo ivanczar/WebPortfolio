@@ -18,7 +18,7 @@ const HeroSectionView = () => {
     <HeroContainer id="home">
       <HeroContent>
         <HeroH1>Ivan Czar</HeroH1>
-        <HeroP>Software Engineering Graduate</HeroP>
+        <HeroP>Software Engineer</HeroP>
       </HeroContent>
       <SocialsWrapper>
         <SocialsIcons>

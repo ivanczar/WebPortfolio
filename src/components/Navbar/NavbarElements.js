@@ -48,6 +48,8 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 25px;
+    margin-right: 25px;
     transform: translate (-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;

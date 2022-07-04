@@ -18,8 +18,7 @@ const ProjectsSectionView = () => {
           <Heading>PROJECTS</Heading>
           {/* <ChipsContainer></ChipsContainer> */}
           <CardsContainer>
-            <Card/>
-  
+            <Card/>  
           </CardsContainer>
         </ProjectsWrapper>
       </ProjectsContainer>

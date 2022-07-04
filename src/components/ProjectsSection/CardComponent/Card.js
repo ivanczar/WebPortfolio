@@ -7,7 +7,10 @@ import {
   TechIconWrapper,
   TechIcon,
   OpenIconWrapper,
-  CardContentWrapper
+  CardContentWrapper,
+  CardHeaderWrapper,
+  CardTextWrapper,
+  GitLink
 } from "./CardElements";
 import { MdOpenInNew } from "react-icons/md";
 import logo from "../../../images/projects/sporthub.png";
@@ -16,27 +19,33 @@ const Card = () => {
   return (
     <>
       <CardContainer>
-        <OpenIconWrapper>
-          <MdOpenInNew src={MdOpenInNew} />
-        </OpenIconWrapper>
+        <CardContentWrapper>
+          <CardHeaderWrapper>
+            <CardLogo src={logo}></CardLogo>
 
-<CardContentWrapper>
+          </CardHeaderWrapper>
 
-        <CardLogo src={logo}></CardLogo>
-        <Heading>SportsHub</Heading>
-        <CardText>
-          SportHub allows athletes to host or join sporting events in their
-          area. It contains a public chat feature, the ability to join teams,
-          and customize your profile.
-        </CardText>
-        <TechIconWrapper>
-          
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-          <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-        </TechIconWrapper>
-</CardContentWrapper>
+          <CardTextWrapper>
+            <OpenIconWrapper>
+              <GitLink href="https://github.com/ivanczar/SportsHub" target="_blank" rel='noreferrer'>
+
+              <MdOpenInNew src={MdOpenInNew} />
+              </GitLink>
+            </OpenIconWrapper>
+            <Heading>SportsHub</Heading>
+            <CardText>
+              SportHub allows athletes to host or join sporting events in their
+              area. It contains a public chat feature, the ability to join teams,
+              and customize your profile.
+            </CardText>
+          </CardTextWrapper>
+          <TechIconWrapper>
+            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          </TechIconWrapper>
+        </CardContentWrapper>
       </CardContainer>
     </>
   );

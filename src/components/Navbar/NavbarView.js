@@ -11,28 +11,54 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
-
+import { animateScroll as scroll } from "react-scroll";
+const scrollUp = () => {
+scroll.scrollToTop();
+}
 const NavbarView = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/"> Auckland, New Zealand</NavLogo>
+          <NavLogo to="/"
+          onClick={scrollUp}> Auckland, New Zealand</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="home">Home</NavLinks>
+              <NavLinks to="home"
+                 smooth={true}
+                 duration={500}
+                 spy={true}
+                 exact='true'
+                 offset={-80}>Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              
+              >About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="work">Work</NavLinks>
+              <NavLinks to="work"
+                 smooth={true}
+                 duration={500}
+                 spy={true}
+                 exact='true'
+                 offset={-80}>Work</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="hireme">Hire Me</NavLinks>
+              <NavLinks to="hireme"
+                 smooth={true}
+                 duration={500}
+                 spy={true}
+                 exact='true'
+                 offset={-80}>Hire Me</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
