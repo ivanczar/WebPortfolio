@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.b1838a04.css",
-    "main.js": "/static/js/main.ea6ec20a.js",
+    "main.js": "/static/js/main.49f9ce34.js",
+    "static/media/sporthub.png": "/static/media/sporthub.60707860e6037f321c3d.png",
     "static/media/profilePic.jpeg": "/static/media/profilePic.938cfbecd016e8c16263.jpeg",
     "index.html": "/index.html",
     "main.b1838a04.css.map": "/static/css/main.b1838a04.css.map",
-    "main.ea6ec20a.js.map": "/static/js/main.ea6ec20a.js.map"
+    "main.49f9ce34.js.map": "/static/js/main.49f9ce34.js.map"
   },
   "entrypoints": [
     "static/css/main.b1838a04.css",
-    "static/js/main.ea6ec20a.js"
+    "static/js/main.49f9ce34.js"
   ]
 }
