@@ -53,7 +53,7 @@ const NavbarView = ({toggle}) => {
                  offset={-80}>Work</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="hireme"
+              <NavLinks to="contact"
                  smooth={true}
                  duration={500}
                  spy={true}

@@ -1,13 +1,10 @@
 import React from 'react'
 import InfoSectionView from './InfoSectionView'
 
-const InfoSectionContainer = ({id, heading,text}) => {
+const InfoSectionContainer = () => {
   return (
-<InfoSectionView>
-id={id}
-heading={heading}
-text={text}
-</InfoSectionView>
+<InfoSectionView/>
+
   )
 }
 

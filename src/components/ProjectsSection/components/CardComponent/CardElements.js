@@ -11,8 +11,8 @@ export const CardContainer = styled.div`
     transition: all 0.1s ease-in-out;
 
     border-style: solid;
-    border-width: 1px;
-    border-color: #fff;
+    border-width: 2px;
+    border-color: #5865F2;
   }
 `;
 
@@ -28,7 +28,7 @@ export const CardHeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #d1d1d1;
   width: 100%;
   height: 30%;
   border-radius: 20px;

@@ -5,6 +5,7 @@ import { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,6 +20,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection />
       <ProjectsSection/>
+      <ContactSection/>
     </>
   );
 };
