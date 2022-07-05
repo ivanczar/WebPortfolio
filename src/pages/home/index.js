@@ -7,6 +7,7 @@ import InfoSection from "../../components/InfoSection";
 import ProjectsSection from "../../components/ProjectsSection";
 import ContactSection from "../../components/ContactSection";
 import FooterSection from "../../components/FooterSection";
+import ScrollButton from "../../components/ScrollButton";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,6 +24,7 @@ const Home = () => {
       <ProjectsSection/>
       <ContactSection/>
       <FooterSection/>
+      <ScrollButton/>
     </>
   );
 };

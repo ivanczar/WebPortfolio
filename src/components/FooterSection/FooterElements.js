@@ -14,6 +14,10 @@ export const SocialsLink = styled.a`
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
+  &:hover {
+    transition: all 0.1s ease-in-out;
+color: #fff;
+  }
 `;
 
 export const Line = styled.hr`

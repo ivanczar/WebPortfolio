@@ -124,7 +124,7 @@ export const ContactSubmit = styled.button`
   font-weight: bold;
   line-height: 24px;
   background-color: #5865f2;
-  color: #000;
+  color: #fff;
   align-items: center;
   justify-content: center;
   border-radius: 35px;
