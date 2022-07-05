@@ -21,10 +21,10 @@ const SidebarView = ({isOpen, toggle}) => {
             <SidebarLink to="home" onClick={toggle}>Home</SidebarLink>
             <SidebarLink to="about" onClick={toggle}> About</SidebarLink>
             <SidebarLink to="work" onClick={toggle}>Work</SidebarLink>
-            <SidebarLink to="hireme" onClick={toggle}>Hire Me</SidebarLink>
+            <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/signin">Resume</SidebarRoute>
+            <SidebarRoute to="/IvanCzar_Resume.pdf" target="_blank" download>Resume</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

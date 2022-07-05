@@ -19,14 +19,13 @@ export const ProjectsWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
-  /* padding: 0 24px; */
-  /* justify-content: center; */
 `;
 
 export const Heading = styled.h1`
   font-size: 150px;
   line-height: 1.1;
   font-weight: 600;
+
   color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
 
   @media screen and (max-width: 480px) {
@@ -46,7 +45,7 @@ export const CardsContainer = styled.div`
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 30px;
   /* background: #000; */
   
 `;

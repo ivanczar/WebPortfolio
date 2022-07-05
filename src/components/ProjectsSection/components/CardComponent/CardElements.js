@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const CardContainer = styled.div`
   display: flex;
   width: 300px;
@@ -61,7 +62,6 @@ margin-top: auto;
 `;
 
 export const TechIconWrapper = styled.div`
-  /* margin-top: 55%; */
   height: 55px;
   display: flex;
   width: 100%;

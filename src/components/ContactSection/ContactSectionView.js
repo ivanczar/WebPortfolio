@@ -8,20 +8,22 @@ import {
   REInput,
   BodyInput,
   ContactSubmit,
+  ButtonLink,
 } from "./ContactElements";
 const ContactSectionView = () => {
   return (
     <>
       <ContactContainer id="contact">
-        <Heading>CONTACT</Heading>
         <ContactFormWrapper>
+          <Heading>CONTACT</Heading>
           <ContactForms>
-            <EmailInput placeholder="Your email"/>
-            <REInput placeholder="Subject"/>
-            <BodyInput placeholder="Body"/>
-            <ContactSubmit>Get in touch</ContactSubmit>
+            <EmailInput placeholder="Your email" />
+            <REInput placeholder="Subject" />
+            <BodyInput placeholder="Body" />
+            <ButtonLink href="mailto:ivanczar2013@gmail.com">
+              <ContactSubmit>Get in touch</ContactSubmit>
+            </ButtonLink>
           </ContactForms>
-          
         </ContactFormWrapper>
       </ContactContainer>
     </>

@@ -58,7 +58,7 @@ const NavbarView = ({toggle}) => {
                  duration={500}
                  spy={true}
                  exact='true'
-                 offset={-80}>Hire Me</NavLinks>
+                 offset={-80}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

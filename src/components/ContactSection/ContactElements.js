@@ -23,16 +23,16 @@ export const ContactFormWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  margin-left: 200px;
+  /* margin-left: 200px; */
   font-size: 150px;
   line-height: 1.1;
   font-weight: 600;
   padding-top: 40px;
-  margin-left: 380px;
+  /* margin-left: 380px; */
   color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
 
   @media screen and (max-width: 480px) {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-size: 50px;
     align-self: center;
   }
@@ -47,7 +47,10 @@ export const ContactForms = styled.div`
   align-items: center;
   /* justify-content: space-around; */
   margin-left: 10px;
+
+
 `;
+
 
 export const EmailInput = styled.input`
   font-size: 20px;
@@ -61,6 +64,12 @@ export const EmailInput = styled.input`
   width: 600px;
   border-radius: 10px;
   margin-top: 40px;
+
+  @media screen and (max-width: 480px) {
+    
+    width: 300px;
+    height: 50px;
+  }
   
 `;
 
@@ -74,7 +83,13 @@ export const REInput = styled.input`
   width: 600px;
   border-radius: 10px;
   margin-top: 20px;
-`;
+
+  @media screen and (max-width: 480px) {
+    
+    width: 300px;
+    height: 50px;
+  }
+  `;
 
 export const BodyInput = styled.textarea`
   font-size: 20px;
@@ -82,20 +97,31 @@ export const BodyInput = styled.textarea`
   color: #000;
   height: 200px;
   width: 600px;
-
+  
   border-style: none;
   border-radius: 10px;
   resize: none;
   margin-top: 20px;
   
-`;
+  @media screen and (max-width: 480px) {
+    
+    width: 300px;
+    height: 100px;
+  }
+  
+  `;
 
+  export const ButtonLink = styled.a`
+    text-decoration: none;
+  `;
 export const ContactSubmit = styled.button`
+
   display: flex;
   align-self: center;
   height: 70px;
   width: 300px;
   font-size: 20px;
+  font-weight: bold;
   line-height: 24px;
   background-color: #5865f2;
   color: #000;
@@ -105,9 +131,17 @@ export const ContactSubmit = styled.button`
   padding: 10px;
   margin-top: 40px;
 
+  @media screen and (max-width: 480px) {
+    
+    width: 300px;
+    height: 50px;
+    
+  }
+
     &:hover {
     transition: all 0.1s ease-in-out;
     background: #fff;
     color: #000;
+    cursor: pointer;
   }
 `;

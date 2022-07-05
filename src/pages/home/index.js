@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../../components/Navbar";
+import Sidebar from "../../components/Sidebar";
 import { useState } from "react";
-import HeroSection from "../components/HeroSection";
-import InfoSection from "../components/InfoSection";
-import ProjectsSection from "../components/ProjectsSection";
-import ContactSection from "../components/ContactSection";
+import HeroSection from "../../components/HeroSection";
+import InfoSection from "../../components/InfoSection";
+import ProjectsSection from "../../components/ProjectsSection";
+import ContactSection from "../../components/ContactSection";
+import FooterSection from "../../components/FooterSection";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +22,7 @@ const Home = () => {
       <InfoSection />
       <ProjectsSection/>
       <ContactSection/>
+      <FooterSection/>
     </>
   );
 };
