@@ -21,7 +21,7 @@ const NavbarView = ({toggle}) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/"
-          onClick={scrollUp}> Auckland, New Zealand</NavLogo>
+          onClick={scrollUp}>ivanczar2013@gmail.com | @ivanczar</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

@@ -16,7 +16,13 @@ import {
 import { MdOpenInNew } from "react-icons/md";
 
 
-const Card = ({logo, git, title, text}) => {
+const Card = ({logo, git, title, text, icons}) => {
+// const {icons} = icons;
+
+
+
+
+
   return (
     <>
       <CardContainer>
@@ -39,12 +45,11 @@ const Card = ({logo, git, title, text}) => {
             </CardText>
           </CardTextWrapper>
           <CardFooter>
-
+{/* pass array of languages as props, loop through them. If found, render icon */}
           <TechIconWrapper>
-            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-            <TechIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            {icons.map(icon => <TechIcon src={icon} />)}
+            
+            
           </TechIconWrapper>
           </CardFooter>
         </CardContentWrapper>
