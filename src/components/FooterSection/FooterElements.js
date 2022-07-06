@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { DarkTheme } from "../../themes";
 export const FooterContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#5865F2")};
+  background: ${({ lightBg }) => (lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple)};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,13 +11,13 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialsLink = styled.a`
-  color: #000;
+  color: ${DarkTheme.colors.black};
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
   &:hover {
     transition: all 0.1s ease-in-out;
-color: #fff;
+    color: ${DarkTheme.colors.white};
   }
 `;
 
@@ -26,7 +26,7 @@ export const Line = styled.hr`
 `;
 
 export const Copyright = styled.p`
-  color: #000;
+  color: ${DarkTheme.colors.black};
   font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
 `;

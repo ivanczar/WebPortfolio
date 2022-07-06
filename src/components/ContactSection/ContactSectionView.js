@@ -10,6 +10,7 @@ import {
   ContactSubmit,
   ButtonLink,
 } from "./ContactElements";
+
 const ContactSectionView = () => {
   return (
     <>

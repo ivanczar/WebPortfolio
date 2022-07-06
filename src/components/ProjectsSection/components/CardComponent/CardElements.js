@@ -6,14 +6,16 @@ export const CardContainer = styled.div`
   width: 300px;
   height: 500px;
   border-radius: 20px;
-  background: #1d1d1d;
-
+  background: ${DarkTheme.colors.cardBackground};
+  padding: 20px;
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+  }
   &:hover {
     transition: all 0.1s ease-in-out;
-
     border-style: solid;
     border-width: 2px;
-    border-color: #5865f2;
+    border-color: ${DarkTheme.colors.purple};
   }
 `;
 
@@ -29,7 +31,7 @@ export const CardHeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #d1d1d1;
+  background: ${DarkTheme.colors.cardHeader};
   width: 100%;
   height: 30%;
   border-radius: 20px;
@@ -65,19 +67,19 @@ export const TechIconWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  background: #000;
+  background: ${DarkTheme.colors.black};
   align-items: center;
   border-radius: 20px;
 `;
 
 export const GitLink = styled.a`
   text-decoration: none;
-  color: #fff;
+  color: ${DarkTheme.colors.white};
 `;
 
 export const Heading = styled.h1`
   font-size: 30px;
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   font-family: ${DarkTheme.fonts.roboto};
 `;
 

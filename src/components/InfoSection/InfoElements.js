@@ -27,7 +27,7 @@ export const Heading = styled.h1`
   font-size: 150px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
+  color: ${({ lightText }) => (lightText ? DarkTheme.colors.black : DarkTheme.colors.purple)};
   font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;

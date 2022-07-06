@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { DarkTheme } from "../../themes";
 
 export const ProjectsContainer = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#0c0c0c")};
+  color: ${DarkTheme.colors.white};
+  background: ${({ lightBg }) =>
+    lightBg ? DarkTheme.colors.white : DarkTheme.colors.grey};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -28,7 +29,8 @@ export const Heading = styled.h1`
   font-weight: 600;
   font-family: ${DarkTheme.fonts.roboto};
 
-  color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
+  color: ${({ lightText }) =>
+    lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
 
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
@@ -37,21 +39,19 @@ export const Heading = styled.h1`
   }
 `;
 
-// export const ProjectImg = styled.img`
-
-// `;
-
 export const CardsContainer = styled.div`
-
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
   margin-top: 30px;
-  /* background: #000; */
-  
+  overflow-x: scroll;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  @media screen and (max-width: 480px) {
+    
+    display: grid;
+  }
 `;
-
-// export const ChipsContainer = styled.div`
-
-// `;
