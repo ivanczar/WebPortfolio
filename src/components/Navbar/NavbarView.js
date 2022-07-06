@@ -1,9 +1,10 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import Dropdown from './Dropdown';
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
+  // NavLogo,
   NavMenu,
   MobileIcon,
   NavItem,
@@ -11,17 +12,16 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
-import { animateScroll as scroll } from "react-scroll";
-const scrollUp = () => {
-scroll.scrollToTop();
-}
+// import { animateScroll as scroll } from "react-scroll";
+// const scrollUp = () => {
+// scroll.scrollToTop();
+// }
 const NavbarView = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/"
-          onClick={scrollUp}>ivanczar2013@gmail.com | @ivanczar</NavLogo>
+          <Dropdown/>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
