@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { DarkTheme } from "../../themes";
 
 export const InfoContainer = styled.div`
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#000")};
 
   @media screen and (max-width: 768px) {
@@ -27,7 +28,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
-
+  font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
     font-size: 50px;
@@ -43,6 +44,7 @@ export const Subtitle = styled.p`
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: ${DarkTheme.fonts.roboto};
 `;
 
 export const ProfilePicWrapper = styled.div`
@@ -65,8 +67,5 @@ export const ArrowPic = styled.img`
 
 export const ProfilePic = styled.img`
   border-radius: 100%;
-
   height: 200px;
-
-  /* margin-top: 20px; */
 `;

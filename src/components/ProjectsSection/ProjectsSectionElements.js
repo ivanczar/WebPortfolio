@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DarkTheme } from "../../themes";
 
 export const ProjectsContainer = styled.div`
   color: #fff;
@@ -25,6 +26,7 @@ export const Heading = styled.h1`
   font-size: 150px;
   line-height: 1.1;
   font-weight: 600;
+  font-family: ${DarkTheme.fonts.roboto};
 
   color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
 

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { DarkTheme } from "../../themes";
 
 
 export const Nav = styled.nav`
-  background: #0c0c0c;
+  background: ${DarkTheme.colors.nav};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkS)`
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1rem;
@@ -53,7 +54,7 @@ export const MobileIcon = styled.div`
     transform: translate (-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${DarkTheme.colors.white};
   }
 `;
 
@@ -73,20 +74,21 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  font-family: ${DarkTheme.fonts.roboto};
   cursor: pointer;
 
   &:hover{
-    color: #5865F2;
+    color: ${DarkTheme.colors.purple}
   }
 
   &.active {
-    border-bottom: 3px solid #5865F2;
+    border-bottom: 3px solid ${DarkTheme.colors.purple};
   }
 `;
 
@@ -100,10 +102,11 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #5865F2;
+  background: ${DarkTheme.colors.purple};
   white-space: nowrap;
   padding: 10px 22px;
-  color: #fff;
+  color: ${DarkTheme.colors.white};
+  font-family: ${DarkTheme.fonts.roboto};
   font-size: 16px;
   outline: none;
   border: none;
@@ -113,7 +116,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    background: #fff;
-    color: #000;
+    background: ${DarkTheme.colors.white};
+    color: ${DarkTheme.colors.black};
   }
 `;

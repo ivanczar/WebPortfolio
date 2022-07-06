@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+import { DarkTheme } from "../../themes";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: ${DarkTheme.colors.nav};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +24,10 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   font-size: 100px;
   text-align: center;
-
+  font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -40,10 +40,11 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: #fff;
+  color: ${DarkTheme.colors.white};
   font-size: 30px;
   text-align: center;
   max-width: 600px;
+  font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -71,10 +72,11 @@ export const SocialsIcons = styled.div`
 `;
 
 export const SocialsText = styled.p`
-  /* display: flex; */
   padding-top: 10px;
   font-size: 1rem;
-  color: #5865F2;
+  color: ${DarkTheme.colors.purple};
+  font-family: ${DarkTheme.fonts.roboto};
+
 
   @media screen and (max-width: 480px) {
     font-size: 1rem;
@@ -82,8 +84,7 @@ export const SocialsText = styled.p`
 `;
 
 export const SocialsLink = styled.a`
-  color: #fff;
-  
+  color: ${DarkTheme.colors.white};
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
@@ -94,9 +95,6 @@ export const SocialsLink = styled.a`
   }
   &:hover {
     transition: all 0.1s ease-in-out;
-color: #5865F2;
-
-
+    color: ${DarkTheme.colors.purple};
   }
 `;
-

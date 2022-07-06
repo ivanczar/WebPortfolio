@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DarkTheme } from "../../themes";
 
 export const ContactContainer = styled.div`
   /* color: #fff; */
@@ -30,7 +31,7 @@ export const Heading = styled.h1`
   padding-top: 40px;
   /* margin-left: 380px; */
   color: ${({ lightText }) => (lightText ? "#000" : "#5865F2")};
-
+  font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     /* padding-bottom: 20px; */
     font-size: 50px;
@@ -64,6 +65,7 @@ export const EmailInput = styled.input`
   width: 600px;
   border-radius: 10px;
   margin-top: 40px;
+  font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 480px) {
     
@@ -77,6 +79,7 @@ export const REInput = styled.input`
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  font-family: ${DarkTheme.fonts.roboto};
 
   border-style: none;
   height: 70px;
@@ -97,6 +100,7 @@ export const BodyInput = styled.textarea`
   color: #000;
   height: 200px;
   width: 600px;
+  font-family: ${DarkTheme.fonts.roboto};
   
   border-style: none;
   border-radius: 10px;
@@ -130,6 +134,7 @@ export const ContactSubmit = styled.button`
   border-radius: 35px;
   padding: 10px;
   margin-top: 40px;
+  font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 480px) {
     

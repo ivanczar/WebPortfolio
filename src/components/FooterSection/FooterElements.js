@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DarkTheme } from "../../themes";
 export const FooterContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#5865F2")};
   display: flex;
@@ -27,6 +28,7 @@ export const Line = styled.hr`
 export const Copyright = styled.p`
   color: #000;
   font-weight: bold;
+  font-family: ${DarkTheme.fonts.roboto};
 `;
 
 export const SocialsContainer = styled.div`

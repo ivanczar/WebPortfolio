@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { DarkTheme } from "../../../../themes";
 
 export const CardContainer = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
 
     border-style: solid;
     border-width: 2px;
-    border-color: #5865F2;
+    border-color: #5865f2;
   }
 `;
 
@@ -55,10 +55,9 @@ export const OpenIconWrapper = styled.div`
   }
 `;
 
-
 export const CardFooter = styled.div`
-width: 100%;
-margin-top: auto;
+  width: 100%;
+  margin-top: auto;
 `;
 
 export const TechIconWrapper = styled.div`
@@ -69,24 +68,25 @@ export const TechIconWrapper = styled.div`
   background: #000;
   align-items: center;
   border-radius: 20px;
-  
 `;
-
 
 export const GitLink = styled.a`
   text-decoration: none;
   color: #fff;
-
 `;
 
 export const Heading = styled.h1`
   font-size: 30px;
   color: #fff;
-  `;
+  font-family: ${DarkTheme.fonts.roboto};
+`;
 
 export const CardText = styled.p`
-
+font-family: ${DarkTheme.fonts.roboto};
+margin-top: 20px;
+font-size: 18px;
 `;
+
 
 export const TechIcon = styled.img`
   height: 30px;
