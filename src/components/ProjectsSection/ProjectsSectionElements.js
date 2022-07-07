@@ -54,6 +54,8 @@ export const CardsContainer = styled.div`
   @media screen and (max-width: 480px) {
     
     display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
     row-gap: 40px;
   }
 `;
