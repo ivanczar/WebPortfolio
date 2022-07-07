@@ -40,10 +40,11 @@ export const Heading = styled.h1`
 `;
 
 export const CardsContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;  
   height: 100%;
   width: 100%;
-  justify-content: space-evenly;
   margin-top: 30px;
   overflow-x: scroll;
   ::-webkit-scrollbar {
@@ -53,5 +54,6 @@ export const CardsContainer = styled.div`
   @media screen and (max-width: 480px) {
     
     display: grid;
+    row-gap: 40px;
   }
 `;

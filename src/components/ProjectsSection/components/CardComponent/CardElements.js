@@ -8,15 +8,14 @@ export const CardContainer = styled.div`
   border-radius: 20px;
   background: ${DarkTheme.colors.cardBackground};
   padding: 20px;
-  @media screen and (max-width: 480px) {
-    margin-top: 20px;
-  }
+
   &:hover {
     transition: all 0.1s ease-in-out;
     border-style: solid;
     border-width: 2px;
     border-color: ${DarkTheme.colors.purple};
   }
+
 `;
 
 export const CardContentWrapper = styled.div`
