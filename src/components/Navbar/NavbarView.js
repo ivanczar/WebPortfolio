@@ -11,6 +11,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  DownloadIcon,
 } from "./NavbarElements";
 // import { animateScroll as scroll } from "react-scroll";
 // const scrollUp = () => {
@@ -62,7 +63,7 @@ const NavbarView = ({toggle}) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/IvanCzar_Resume.pdf" target="_blank" download>Resume</NavBtnLink>
+            <NavBtnLink to="/IvanCzar_Resume.pdf" target="_blank" download>Resume (PDF)<DownloadIcon/></NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

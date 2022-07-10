@@ -59,6 +59,7 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   color: ${DarkTheme.colors.white};
   cursor: pointer;
+  font-family: ${DarkTheme.fonts.roboto};
 `;
 export const SideBtnWrap = styled.div`
   display: flex;
@@ -77,6 +78,7 @@ export const SidebarRoute = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-family: ${DarkTheme.fonts.roboto};
 
   &:hover {
     transition: all 0.2s ease-in-out;

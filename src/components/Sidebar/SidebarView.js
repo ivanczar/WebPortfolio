@@ -24,7 +24,7 @@ const SidebarView = ({isOpen, toggle}) => {
             <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/IvanCzar_Resume.pdf" target="_blank" download>Resume</SidebarRoute>
+            <SidebarRoute to="/IvanCzar_Resume.pdf" target="_blank" download>Resume (PDF)</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

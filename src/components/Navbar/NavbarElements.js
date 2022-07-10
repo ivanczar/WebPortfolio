@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { DarkTheme } from "../../themes";
-
+import {HiDownload} from "react-icons/hi";
 
 export const Nav = styled.nav`
   background: ${DarkTheme.colors.nav};
@@ -78,7 +78,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 3rem;
   height: 100%;
   font-family: ${DarkTheme.fonts.roboto};
   cursor: pointer;
@@ -95,12 +95,14 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 export const NavBtnLink = styled(LinkR)`
+
   border-radius: 50px;
   background: ${DarkTheme.colors.purple};
   white-space: nowrap;
@@ -119,4 +121,8 @@ export const NavBtnLink = styled(LinkR)`
     background: ${DarkTheme.colors.white};
     color: ${DarkTheme.colors.black};
   }
+`;
+
+export const DownloadIcon = styled(HiDownload)`
+  margin-left: 10px;
 `;
