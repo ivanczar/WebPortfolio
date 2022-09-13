@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1838a04.css",
-    "main.js": "/static/js/main.cabbd33a.js",
+    "main.css": "/static/css/main.2a44c9d4.css",
+    "main.js": "/static/js/main.3b5b82fe.js",
     "static/media/cabsonline.png": "/static/media/cabsonline.16434737b2c1fe740368.png",
     "static/media/profilePic.jpeg": "/static/media/profilePic.1defe07e0e27fbe1ebf0.jpeg",
     "static/media/blackjack.png": "/static/media/blackjack.5b6feb4eb850f3a9e4c9.png",
     "static/media/sporthub.png": "/static/media/sporthub.60707860e6037f321c3d.png",
     "index.html": "/index.html",
-    "main.b1838a04.css.map": "/static/css/main.b1838a04.css.map",
-    "main.cabbd33a.js.map": "/static/js/main.cabbd33a.js.map"
+    "main.2a44c9d4.css.map": "/static/css/main.2a44c9d4.css.map",
+    "main.3b5b82fe.js.map": "/static/js/main.3b5b82fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1838a04.css",
-    "static/js/main.cabbd33a.js"
+    "static/css/main.2a44c9d4.css",
+    "static/js/main.3b5b82fe.js"
   ]
 }
