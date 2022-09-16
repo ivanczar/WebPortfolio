@@ -1,14 +1,16 @@
-import styled from "styled-components";
-import { DarkTheme } from "../../themes";
+import styled from 'styled-components';
+import { DarkTheme } from '../../themes';
+
 
 export const InfoContainer = styled.div`
   color: ${DarkTheme.colors.white};
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#000")};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#000')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
+
 
 export const InfoWrapper = styled.div`
   display: flex;
@@ -25,9 +27,10 @@ export const InfoWrapper = styled.div`
 
 export const Heading = styled.h1`
   font-size: 150px;
-  line-height: 1.1;
+  /* line-height: ; */
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? DarkTheme.colors.black : DarkTheme.colors.purple)};
+  color: ${({ lightText }) =>
+    lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
   font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
@@ -38,13 +41,14 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   display: flex;
-  font-size: 20px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  font-size: 25px;
+  line-height: 1cm;
+  /* line-height: 24px; */
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: ${DarkTheme.fonts.roboto};
+  font-family: ${DarkTheme.fonts.titillium};
 `;
 
 export const ProfilePicWrapper = styled.div`

@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { DarkTheme } from "../../themes";
+import styled, { keyframes } from 'styled-components';
+import { DarkTheme } from '../../themes';
+import { Link as LinkS } from 'react-scroll';
 
 export const HeroContainer = styled.div`
   background: ${DarkTheme.colors.nav};
@@ -22,12 +23,28 @@ export const HeroContent = styled.div`
   align-items: center;
   margin-bottom: 10%;
 `;
-
+const fade = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+const fadeSub = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 export const HeroH1 = styled.h1`
   color: ${DarkTheme.colors.white};
   font-size: 100px;
   text-align: center;
   font-family: ${DarkTheme.fonts.roboto};
+  animation: ${fade} 1s ease-in;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -35,6 +52,9 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+  }
+  &:hover {
+    opacity: 1;
   }
 `;
 
@@ -45,6 +65,7 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 600px;
   font-family: ${DarkTheme.fonts.roboto};
+  animation: ${fadeSub} 2s linear;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -77,7 +98,6 @@ export const SocialsText = styled.p`
   color: ${DarkTheme.colors.purple};
   font-family: ${DarkTheme.fonts.roboto};
 
-
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
@@ -96,5 +116,23 @@ export const SocialsLink = styled.a`
   &:hover {
     transition: all 0.1s ease-in-out;
     color: ${DarkTheme.colors.purple};
+  }
+`;
+export const NavLinks = styled(LinkS)`
+  color: ${DarkTheme.colors.white};
+  /* display: flex; */
+  /* align-items: center; */
+  text-decoration: none;
+  /* padding: 0 3rem; */
+  /* height: 100%; */
+  /* font-family: ${DarkTheme.fonts.roboto}; */
+  cursor: pointer;
+
+  &:hover {
+    color: ${DarkTheme.colors.purple};
+  }
+
+  &.active {
+    border-bottom: 3px solid ${DarkTheme.colors.purple};
   }
 `;

@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { DarkTheme } from "../../themes";
+import styled from 'styled-components';
+import { DarkTheme } from '../../themes';
 
 export const ContactContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#000")};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#000')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -27,7 +27,8 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   padding-top: 40px;
-  color: ${({ lightText }) => (lightText ? DarkTheme.colors.black : DarkTheme.colors.purple)};
+  color: ${({ lightText }) =>
+    lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
   font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     font-size: 50px;
@@ -41,26 +42,29 @@ export const ContactForms = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+  /* align-self: center; */
   margin-left: 10px;
 `;
 
 export const EmailInput = styled.input`
   font-size: 20px;
-  line-height: 24px;
+  /* line-height: 24px; */
   color: ${DarkTheme.colors.black};
   text-align: justify;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
   border-style: none;
   height: 70px;
   width: 600px;
   border-radius: 10px;
   margin-top: 40px;
-  font-family: ${DarkTheme.fonts.roboto};
+  margin-left: 200px;
+  font-family: ${DarkTheme.fonts.titillium};
 
   @media screen and (max-width: 480px) {
     width: 300px;
     height: 50px;
+    margin-left: 30px;
   }
 `;
 
@@ -68,8 +72,8 @@ export const REInput = styled.input`
   font-size: 20px;
   line-height: 24px;
   color: ${DarkTheme.colors.black};
-  font-family: ${DarkTheme.fonts.roboto};
-
+  font-family: ${DarkTheme.fonts.titillium};
+  margin-left: 200px;
   border-style: none;
   height: 70px;
   width: 600px;
@@ -79,6 +83,7 @@ export const REInput = styled.input`
   @media screen and (max-width: 480px) {
     width: 300px;
     height: 50px;
+    margin-left:30px;
   }
 `;
 
@@ -88,8 +93,8 @@ export const BodyInput = styled.textarea`
   color: ${DarkTheme.colors.black};
   height: 200px;
   width: 600px;
-  font-family: ${DarkTheme.fonts.roboto};
-
+  font-family: ${DarkTheme.fonts.titillium};
+  margin-left: 200px;
   border-style: none;
   border-radius: 10px;
   resize: none;
@@ -98,8 +103,11 @@ export const BodyInput = styled.textarea`
   @media screen and (max-width: 480px) {
     width: 300px;
     height: 100px;
+    margin-left: 30px;
   }
 `;
+
+export const ActualForm = styled.form``;
 
 export const ButtonLink = styled.a`
   text-decoration: none;

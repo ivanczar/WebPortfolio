@@ -99,7 +99,8 @@ export const NavBtn = styled.nav`
 
   @media screen and (max-width: 768px) {
     display: none;
-  }
+  } 
+  
 `;
 export const NavBtnLink = styled(LinkR)`
 
@@ -125,4 +126,6 @@ export const NavBtnLink = styled(LinkR)`
 
 export const DownloadIcon = styled(HiDownload)`
   margin-left: 10px;
+
+
 `;

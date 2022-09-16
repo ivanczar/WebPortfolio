@@ -1,49 +1,56 @@
-import React from "react";
+import React from 'react';
 import {
   FooterContainer,
   SocialsLink,
   SocialsIcons,
   SocialsContainer,
-  Line,
   Copyright,
   CopyrightWrapper,
-} from "./FooterElements";
+} from './FooterElements';
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+import { ThemeProvider } from 'styled-components';
 
-const FooterSectionView = () => {
+
+const FooterSectionView = (props) => {
   return (
-    <>
-      <FooterContainer>
+    
+    
+    <FooterContainer>
         <SocialsContainer>
           <SocialsIcons>
             <SocialsLink
-              href="https://github.com/ivanczar"
-              target="_blank"
-              rel="noreferrer"
-            >
+              href='https://github.com/ivanczar'
+              target='_blank'
+              rel='noreferrer'
+              >
               <FaGithub></FaGithub>
             </SocialsLink>
             <SocialsLink
-              href="https://www.linkedin.com/in/ivanczar"
-              target="_blank"
-              rel="noreferrer"
-            >
+              href='https://www.linkedin.com/in/ivanczar'
+              target='_blank'
+              rel='noreferrer'
+              >
               <FaLinkedin></FaLinkedin>
             </SocialsLink>
-            <SocialsLink href="mailto:ivanczar2013@gmail.com">
+              <ThemeProvider>
+            <div>
+
+            <SocialsLink href='mailto:ivanczar2013@gmail.com'>
               <AiOutlineMail></AiOutlineMail>
             </SocialsLink>
+            </div>
+              </ThemeProvider>
           </SocialsIcons>
         </SocialsContainer>
         <CopyrightWrapper>
-          <Line />
+          
           <Copyright>Built from the ground up by Ivan Czar</Copyright>
-          <Copyright>© Copyright 2022 - All rights reserved</Copyright>
+          <Copyright>© Copyright {props.year}</Copyright>
         </CopyrightWrapper>
       </FooterContainer>
-    </>
+
   );
 };
 

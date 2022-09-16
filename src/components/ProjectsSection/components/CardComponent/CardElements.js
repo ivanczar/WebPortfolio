@@ -86,6 +86,7 @@ export const CardText = styled.p`
 font-family: ${DarkTheme.fonts.roboto};
 margin-top: 20px;
 font-size: 18px;
+font-family: ${DarkTheme.fonts.titillium};;
 `;
 
 

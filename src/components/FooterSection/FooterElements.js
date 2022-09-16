@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import { DarkTheme } from "../../themes";
+import styled from 'styled-components';
+import { DarkTheme } from '../../themes';
 export const FooterContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple)};
+  background: ${({ lightBg }) =>
+    lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +30,7 @@ export const Copyright = styled.p`
   color: ${DarkTheme.colors.black};
   font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
+  
 `;
 
 export const SocialsContainer = styled.div`
@@ -44,4 +46,8 @@ export const SocialsIcons = styled.div`
 
 export const CopyrightWrapper = styled.div`
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 `;
