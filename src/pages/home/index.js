@@ -8,6 +8,7 @@ import ProjectsSection from '../../components/ProjectsSection';
 import ContactSection from '../../components/ContactSection';
 import FooterSection from '../../components/FooterSection';
 import ScrollButton from '../../components/ScrollButton';
+import { ThemeProvider } from 'styled-components';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

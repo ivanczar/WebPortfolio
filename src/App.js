@@ -5,14 +5,11 @@ import Home from './pages/home';
 
 function App() {
   return (
-
-        <div>
-        <Router>
-          <Home />
-          </Router>
-        </div>
-
     
+    <Router>
+
+      <Home />
+    </Router>
   );
 }
 

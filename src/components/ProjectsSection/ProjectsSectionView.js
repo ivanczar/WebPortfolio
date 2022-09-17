@@ -42,12 +42,13 @@ const ProjectsSectionView = () => {
 
   return (
     <>
-      <ProjectsContainer id='work'>
-        <ProjectsWrapper>
+      <ProjectsContainer  id='work'>
+        <ProjectsWrapper >
           <Heading>PROJECTS</Heading>
           {/* <ChipsContainer></ChipsContainer> */}
-          <CardsContainer>
+          <CardsContainer key={"test"}>
             <Card
+           
               logo={shlogo}
               git={'https://github.com/ivanczar/SportsHub'}
               title={'SportsHub'}

@@ -17,12 +17,6 @@ import { MdOpenInNew } from "react-icons/md";
 
 
 const Card = ({logo, git, title, text, icons}) => {
-// const {icons} = icons;
-
-
-
-
-
   return (
     <>
       <CardContainer>
@@ -36,7 +30,7 @@ const Card = ({logo, git, title, text, icons}) => {
             <OpenIconWrapper>
               <GitLink href={git} target="_blank" rel='noreferrer'>
 
-              <MdOpenInNew src={MdOpenInNew} />
+              <MdOpenInNew  />
               </GitLink>
             </OpenIconWrapper>
             <Heading>{title}</Heading>
@@ -47,7 +41,7 @@ const Card = ({logo, git, title, text, icons}) => {
           <CardFooter>
 {/* pass array of languages as props, loop through them. If found, render icon */}
           <TechIconWrapper>
-            {icons.map(icon => <TechIcon src={icon} />)}
+            {icons.map(icon => <TechIcon key={icon} src={icon} />)}
             
             
           </TechIconWrapper>

@@ -19,6 +19,7 @@ const HeroSectionView = () => {
     <HeroContainer id='home'>
       <HeroContent>
         <HeroH1>Ivan Czar</HeroH1>
+
         <HeroP>Software Engineer</HeroP>
       </HeroContent>
       <SocialsWrapper>
@@ -38,18 +39,16 @@ const HeroSectionView = () => {
             <FaLinkedin></FaLinkedin>
           </SocialsLink>
           <SocialsLink>
-
-          <NavLinks
-            to='contact'
-            smooth={true}
-            duration={1000}
-            spy={true}
-            exact='true'
-            offset={-80}
-          >
-            <AiOutlineMail  />
-          </NavLinks>
-            
+            <NavLinks
+              to='contact'
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              <AiOutlineMail />
+            </NavLinks>
           </SocialsLink>
         </SocialsIcons>
         <SocialsText>Connect</SocialsText>
