@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2a44c9d4.css",
-    "main.js": "/static/js/main.a08d48ce.js",
+    "main.js": "/static/js/main.79753aeb.js",
     "static/media/cabsonline.png": "/static/media/cabsonline.16434737b2c1fe740368.png",
     "static/media/profilePic.jpeg": "/static/media/profilePic.1defe07e0e27fbe1ebf0.jpeg",
     "static/media/blackjack.png": "/static/media/blackjack.5b6feb4eb850f3a9e4c9.png",
     "static/media/sporthub.png": "/static/media/sporthub.60707860e6037f321c3d.png",
+    "static/media/blob-scene-haikei-mobile.svg": "/static/media/blob-scene-haikei-mobile.ea429adf96e08182d48d1e4ebd189948.svg",
+    "static/media/blob-scene-haikei1.svg": "/static/media/blob-scene-haikei1.6855aa087cd99a92e6a07445f64cddcf.svg",
     "index.html": "/index.html",
+    "static/media/wave-haikei.svg": "/static/media/wave-haikei.73ae56cdd0c96838675e70a9424dc024.svg",
     "main.2a44c9d4.css.map": "/static/css/main.2a44c9d4.css.map",
-    "main.a08d48ce.js.map": "/static/js/main.a08d48ce.js.map"
+    "main.79753aeb.js.map": "/static/js/main.79753aeb.js.map"
   },
   "entrypoints": [
     "static/css/main.2a44c9d4.css",
-    "static/js/main.a08d48ce.js"
+    "static/js/main.79753aeb.js"
   ]
 }
