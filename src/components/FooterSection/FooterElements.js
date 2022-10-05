@@ -1,14 +1,20 @@
 import styled from 'styled-components';
 import { DarkTheme } from '../../themes';
+import waveImg from '../../assets/images/footer/wave-haikei.svg';
+
 export const FooterContainer = styled.div`
-  background: ${({ lightBg }) =>
-    lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple};
+  /* background: ${({ lightBg }) =>
+    lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple}; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
   width: 100%;
+  background-image: url(${waveImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const SocialsLink = styled.a`
@@ -30,13 +36,13 @@ export const Copyright = styled.p`
   color: ${DarkTheme.colors.black};
   font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
-  
 `;
 
 export const SocialsContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 80px;
 `;
 
 export const SocialsIcons = styled.div`
@@ -45,9 +51,8 @@ export const SocialsIcons = styled.div`
 `;
 
 export const CopyrightWrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 `;

@@ -3,12 +3,12 @@
 export const DarkTheme = {
   colors: {
     purple: '#4272f5',
-    black: '#000',
-    nav: '#0c0c0c',
-    grey: '#0c0c0c',
+    black: '#001220',
+    nav: '#001220',
+    grey: '#001220',
     white: '#fff',
     cardHeader: '#d1d1d1',
-    cardBackground: '#1d1d1d',
+    cardBackground: '#002233',
   },
   fonts: {
     roboto: "'Roboto', sans-serif",

@@ -1,9 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import { DarkTheme } from '../../themes';
 import { Link as LinkS } from 'react-scroll';
+import blobsDesk from '../../assets/images/hero/blob-scene-haikei1.svg';
+import blobsMobile from '../../assets/images/hero/blob-scene-haikei-mobile.svg';
 
 export const HeroContainer = styled.div`
-  background: ${DarkTheme.colors.nav};
+  /* background: ${DarkTheme.colors.black}; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +13,13 @@ export const HeroContainer = styled.div`
   height: 900px;
   position: relative;
   z-index: 1;
+  background-image: url(${blobsDesk});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 480px) {
+    background-image: url(${blobsMobile});
+  }
 `;
 
 export const HeroContent = styled.div`

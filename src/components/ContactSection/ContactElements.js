@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { DarkTheme } from '../../themes';
 
 export const ContactContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#000')};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    height: 100vh
   }
 `;
 
@@ -30,6 +31,7 @@ export const Heading = styled.h1`
   color: ${({ lightText }) =>
     lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
   font-family: ${DarkTheme.fonts.roboto};
+
   @media screen and (max-width: 480px) {
     font-size: 50px;
     align-self: center;
@@ -42,8 +44,13 @@ export const ContactForms = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+  align-content: center;
+  /* justify-content: center; */
   /* align-self: center; */
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* @media screen and (max-width: 480px) {
+  margin-left: 20px;
+  } */
 `;
 
 export const EmailInput = styled.input`
@@ -60,6 +67,11 @@ export const EmailInput = styled.input`
   margin-top: 40px;
   margin-left: 200px;
   font-family: ${DarkTheme.fonts.titillium};
+  &:focus{
+    outline: none !important;
+    border:3px solid ${DarkTheme.colors.purple};
+
+  }
 
   @media screen and (max-width: 480px) {
     width: 300px;
@@ -85,6 +97,11 @@ export const REInput = styled.input`
     height: 50px;
     margin-left:30px;
   }
+    &:focus{
+    outline: none !important;
+    border:3px solid ${DarkTheme.colors.purple};
+
+  }
 `;
 
 export const BodyInput = styled.textarea`
@@ -105,6 +122,11 @@ export const BodyInput = styled.textarea`
     height: 100px;
     margin-left: 30px;
   }
+  &:focus{
+    outline: none !important;
+    border:3px solid ${DarkTheme.colors.purple};
+
+  }
 `;
 
 export const ActualForm = styled.form``;
@@ -115,8 +137,8 @@ export const ButtonLink = styled.a`
 export const ContactSubmit = styled.button`
   display: flex;
   align-self: center;
-  height: 70px;
-  width: 300px;
+  height: 60px;
+  width: 200px;
   font-size: 20px;
   font-weight: bold;
   line-height: 24px;
@@ -124,14 +146,17 @@ export const ContactSubmit = styled.button`
   color: ${DarkTheme.colors.white};
   align-items: center;
   justify-content: center;
-  border-radius: 35px;
-  padding: 10px;
+  border-radius: 15px;
+  /* padding: 10px; */
   margin-top: 40px;
   font-family: ${DarkTheme.fonts.roboto};
+  margin-right: 50px;
+  
 
   @media screen and (max-width: 480px) {
-    width: 300px;
+    width: 200px;
     height: 50px;
+    margin-left: 60px;
   }
 
   &:hover {

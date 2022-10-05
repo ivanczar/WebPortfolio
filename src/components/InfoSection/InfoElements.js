@@ -4,7 +4,7 @@ import { DarkTheme } from '../../themes';
 
 export const InfoContainer = styled.div`
   color: ${DarkTheme.colors.white};
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#000')};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

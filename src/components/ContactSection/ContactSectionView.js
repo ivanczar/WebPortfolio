@@ -16,17 +16,19 @@ import {
 
 const ContactSectionView = () => {
   const handleSend = () => {
-    notify();
-    console.log('hndling');
-    sendEmail();
+    if (
+      form.current.from_name.value === '' ||
+      form.current.message.value === ''
+    ) {
+      toast.error('Please fill out all fields');
+    } else {
+      sendEmail();
+    }
   };
 
-  const notify = () => toast.success('Email Sent!');
   const form = useRef();
 
   const sendEmail = () => {
-    // e.preventDefault();
-
     emailjs
       .sendForm(
         'service_wxxxmxg',
@@ -37,14 +39,13 @@ const ContactSectionView = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log('sent');
+          toast.success('Email Sent!');
         },
         (error) => {
           console.log(error.text);
-          console.log('rip');
+          toast.error('Error: Please try again later or contact on LinkedIn');
         }
       );
-    // e.target.reset();
   };
 
   return (
@@ -54,15 +55,14 @@ const ContactSectionView = () => {
           <Heading>CONTACT</Heading>
           <ContactForms>
             <form ref={form}>
-              <EmailInput name='from_name' placeholder='Your email' />
-              <REInput name='subject' placeholder='Subject' />
-              <BodyInput name='message' placeholder='Body' />
+              <EmailInput name='from_name' placeholder='Your Email Address' />
+              <REInput name='subject' placeholder='Email Subject' />
+              <BodyInput name='message' placeholder='Email Body' />
             </form>
             <ButtonLink>
               <ContactSubmit
                 type='submit'
                 onClick={() => {
-                  // sendEmail();
                   handleSend();
                 }}
               >
