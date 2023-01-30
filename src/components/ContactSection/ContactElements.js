@@ -3,6 +3,7 @@ import { DarkTheme } from '../../themes';
 
 export const ContactContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
+  height: 900px;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -14,13 +15,12 @@ export const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 1;
-  height: 900px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  justify-content: center;
-  padding: 20px;
+  /* justify-content: center; */
+  /* padding: 20px; */
 `;
 
 export const Heading = styled.h1`
@@ -45,12 +45,11 @@ export const ContactForms = styled.div`
   height: 100%;
   align-items: center;
   align-content: center;
+  margin: auto;
   /* justify-content: center; */
   /* align-self: center; */
   /* margin-left: 10px; */
-  /* @media screen and (max-width: 480px) {
-  margin-left: 20px;
-  } */
+
 `;
 
 export const EmailInput = styled.input`

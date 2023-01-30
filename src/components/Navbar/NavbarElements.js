@@ -20,6 +20,7 @@ export const Nav = styled.nav`
   }
 `;
 
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -104,7 +105,7 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled(LinkR)`
 
-  border-radius: 15px;
+  border-radius: 5px;
   background: ${DarkTheme.colors.purple};
   white-space: nowrap;
   padding: 10px 22px;
