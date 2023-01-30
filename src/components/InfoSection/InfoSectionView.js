@@ -21,16 +21,14 @@ const InfoSection = () => {
           </ProfilePicWrapper>
           <Heading>ABOUT</Heading>
           <Subtitle>
-            Hi! my name is Ivan and i am a Software Engineering student from Argentina, based in Auckland, New Zealand.
-            I have experience building mobile apps in React Native using component libraries such
-            as NativeBase, and connecting it to a NoSQL database such as
-            Firebase. I have also used PHP and Java in different projects to interact
-            with SQL databases.  
-            <br/>
-            I like playing guitar, working out, and being outdoors. I recently got a RaspberryPi 4 and made it 
-            into a homelab using docker containers to host services such as: 
-            a Nodejs server, PostgreSQL database, DNS server, and a network-wide adblocker.
-
+            Hi! I'm Ivan, a Full Stack developer with industry experience building
+            websites and web applications. I specialize in JavaScript and have
+            experience working with Java and Python. I also has experience
+            working with React and Nodejs.
+            <br />
+            In my free time, I enjoy learning about IoT, camping, and
+            shredding on guitar. I am a highly motivated and organized team
+            player with exposure to many different cultures.
           </Subtitle>
         </InfoWrapper>
       </InfoContainer>
