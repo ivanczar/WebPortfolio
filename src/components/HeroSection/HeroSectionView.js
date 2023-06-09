@@ -13,16 +13,28 @@ import {
 } from './HeroElements';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-
+import { motion } from 'framer-motion';
 const HeroSectionView = () => {
   return (
     <HeroContainer id='home'>
-      <HeroContent>
+      <HeroContent
+        as={motion.div}
+        initial={{ y: -500 }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true }}
+        
+      >
         <HeroH1>Ivan Czar</HeroH1>
 
         <HeroP>Software Engineer</HeroP>
       </HeroContent>
-      <SocialsWrapper>
+      <SocialsWrapper
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5 }}
+      >
         <SocialsIcons>
           <SocialsLink
             href='https://github.com/ivanczar'

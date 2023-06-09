@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { DarkTheme } from '../../themes';
 import { Link as LinkS } from 'react-scroll';
 import blobsDesk from '../../assets/images/hero/blob-scene-haikei1.svg';
@@ -32,28 +32,13 @@ export const HeroContent = styled.div`
   align-items: center;
   margin-bottom: 10%;
 `;
-const fade = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-const fadeSub = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+
+
 export const HeroH1 = styled.h1`
   color: ${DarkTheme.colors.white};
   font-size: 100px;
   text-align: center;
   font-family: ${DarkTheme.fonts.roboto};
-  animation: ${fade} 1s ease-in;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -62,9 +47,7 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-  &:hover {
-    opacity: 1;
-  }
+
 `;
 
 export const HeroP = styled.p`
@@ -74,7 +57,6 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 600px;
   font-family: ${DarkTheme.fonts.roboto};
-  animation: ${fadeSub} 2s linear;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

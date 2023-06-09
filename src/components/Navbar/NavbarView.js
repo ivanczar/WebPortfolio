@@ -20,7 +20,6 @@ import {
 const NavbarView = ({ toggle }) => {
   return (
     <>
-
       <Nav>
         <NavbarContainer>
           {/* <Dropdown/> */}
@@ -78,7 +77,10 @@ const NavbarView = ({ toggle }) => {
             </NavItem> */}
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='IvanCzar_Resume.pdf' target='_blank' download>
+            <NavBtnLink
+              href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
+              target='_blank'
+            >
               Resume (PDF)
               <DriveIcon />
             </NavBtnLink>
