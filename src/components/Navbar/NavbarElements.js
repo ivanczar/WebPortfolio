@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { DarkTheme } from "../../themes";
-import {FaGoogleDrive} from "react-icons/fa";
+import {FaExternalLinkAlt} from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: ${DarkTheme.colors.nav};
@@ -124,7 +124,7 @@ export const NavBtnLink = styled.a`
   }
 `;
 
-export const DriveIcon = styled(FaGoogleDrive)`
+export const DriveIcon = styled(FaExternalLinkAlt)`
   margin-left: 10px;
 margin-bottom: -2px;
 
