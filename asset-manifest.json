@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2a44c9d4.css",
-    "main.js": "/static/js/main.a20b9908.js",
+    "main.js": "/static/js/main.14dc1970.js",
     "static/media/cabsonline.png": "/static/media/cabsonline.16434737b2c1fe740368.png",
     "static/media/profilePic.jpeg": "/static/media/profilePic.1defe07e0e27fbe1ebf0.jpeg",
     "static/media/blackjack.png": "/static/media/blackjack.5b6feb4eb850f3a9e4c9.png",
@@ -11,10 +11,10 @@
     "index.html": "/index.html",
     "static/media/wave-haikei.svg": "/static/media/wave-haikei.73ae56cdd0c96838675e70a9424dc024.svg",
     "main.2a44c9d4.css.map": "/static/css/main.2a44c9d4.css.map",
-    "main.a20b9908.js.map": "/static/js/main.a20b9908.js.map"
+    "main.14dc1970.js.map": "/static/js/main.14dc1970.js.map"
   },
   "entrypoints": [
     "static/css/main.2a44c9d4.css",
-    "static/js/main.a20b9908.js"
+    "static/js/main.14dc1970.js"
   ]
 }
