@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { DarkTheme } from '../../themes';
 
-
 export const InfoContainer = styled.div`
   color: ${DarkTheme.colors.white};
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
@@ -10,7 +9,6 @@ export const InfoContainer = styled.div`
     padding: 100px 0;
   }
 `;
-
 
 export const InfoWrapper = styled.div`
   display: flex;
@@ -73,3 +71,27 @@ export const ProfilePic = styled.img`
   border-radius: 100%;
   height: 200px;
 `;
+
+export const TechWrapper = styled.div`
+  margin-top: 5rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid;
+  height: 3.5rem;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 2.5rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+    width: 100%;
+    height: 5rem;
+
+
+
+  }
+`;
+

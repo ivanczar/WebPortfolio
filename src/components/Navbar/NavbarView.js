@@ -11,7 +11,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-  DownloadIcon,
+  DriveIcon,
 } from './NavbarElements';
 // import { animateScroll as scroll } from "react-scroll";
 // const scrollUp = () => {
@@ -52,7 +52,7 @@ const NavbarView = ({ toggle }) => {
                 About
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to='work'
                 smooth={true}
@@ -75,12 +75,12 @@ const NavbarView = ({ toggle }) => {
                 >
                 Contact
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
           </NavMenu>
           <NavBtn>
             <NavBtnLink to='IvanCzar_Resume.pdf' target='_blank' download>
               Resume (PDF)
-              <DownloadIcon />
+              <DriveIcon />
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>

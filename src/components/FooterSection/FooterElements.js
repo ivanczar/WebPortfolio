@@ -34,7 +34,7 @@ export const Line = styled.hr`
 
 export const Copyright = styled.p`
   color: ${DarkTheme.colors.black};
-  font-weight: bold;
+  // font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
 `;
 
@@ -43,14 +43,15 @@ export const SocialsContainer = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 80px;
-`;
-
-export const SocialsIcons = styled.div`
+  
+  `;
+  
+  export const SocialsIcons = styled.div`
   display: flex;
   flex-direction: row;
-`;
-
-export const CopyrightWrapper = styled.div`
+  `;
+  
+  export const CopyrightWrapper = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;

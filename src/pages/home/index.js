@@ -23,8 +23,8 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection />
-      <ProjectsSection />
-      <ContactSection />
+      {/* <ProjectsSection /> */}
+      {/* <ContactSection /> */}
       <FooterSection />
       <ScrollButton />
     </>

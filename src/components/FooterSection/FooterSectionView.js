@@ -37,8 +37,7 @@ const FooterSectionView = (props) => {
         </SocialsIcons>
       </SocialsContainer>
       <CopyrightWrapper>
-        <Copyright>Built from the ground up by Ivan Czar</Copyright>
-        <Copyright>© Copyright {props.year}</Copyright>
+        <Copyright>Ivan Czar © {props.year}</Copyright>
       </CopyrightWrapper>
     </FooterContainer>
   );

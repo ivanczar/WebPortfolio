@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { DarkTheme } from "../../themes";
-import {HiDownload} from "react-icons/hi";
+import {FaGoogleDrive} from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: ${DarkTheme.colors.nav};
@@ -96,7 +96,6 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -125,8 +124,8 @@ export const NavBtnLink = styled(LinkR)`
   }
 `;
 
-export const DownloadIcon = styled(HiDownload)`
+export const DriveIcon = styled(FaGoogleDrive)`
   margin-left: 10px;
-
+margin-bottom: -2px;
 
 `;
