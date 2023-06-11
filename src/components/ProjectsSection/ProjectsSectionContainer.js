@@ -1,11 +1,9 @@
 import React from 'react'
 import ProjectsSectionView from './ProjectsSectionView'
 
-
-
-const ProjectsSectionContainer = () => {
+const ProjectsSectionContainer = ({isEnglish}) => {
   return (
-<ProjectsSectionView/>
+<ProjectsSectionView isEnglish={isEnglish}/>
 
   )
 }

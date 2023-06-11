@@ -14,7 +14,7 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-const HeroSectionView = () => {
+const HeroSectionView = ({ isEnglish }) => {
   return (
     <HeroContainer id='home'>
       <HeroContent
@@ -22,11 +22,12 @@ const HeroSectionView = () => {
         initial={{ y: -500 }}
         whileInView={{ y: 0 }}
         viewport={{ once: true }}
-        
       >
-        <HeroH1>Ivan Czar</HeroH1>
+        <HeroH1>{isEnglish ? 'Ivan Czar' : 'Iván Czar'}</HeroH1>
 
-        <HeroP>Software Engineer</HeroP>
+        <HeroP>
+          {isEnglish ? 'Software Engineer' : 'Ingeniero en Sistemas'}
+        </HeroP>
       </HeroContent>
       <SocialsWrapper
         as={motion.div}
@@ -63,7 +64,9 @@ const HeroSectionView = () => {
             </NavLinks>
           </SocialsLink>
         </SocialsIcons>
-        <SocialsText>Connect</SocialsText>
+        <SocialsText>
+          {isEnglish ? "Let's Connect" : 'Contáctame aquí'}
+        </SocialsText>
       </SocialsWrapper>
     </HeroContainer>
   );

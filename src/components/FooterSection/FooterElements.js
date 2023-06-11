@@ -1,30 +1,33 @@
 import styled from 'styled-components';
-import { DarkTheme } from '../../themes';
-import waveImg from '../../assets/images/footer/wave-haikei.svg';
+import { DarkTheme, LightTheme } from '../../themes';
+import footerLight from '../../assets/images/footer/footerLight.svg'
+import footerDark from '../../assets/images/footer/footerDark.svg'
+
 
 export const FooterContainer = styled.div`
-  /* background: ${({ lightBg }) =>
-    lightBg ? DarkTheme.colors.black : DarkTheme.colors.purple}; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
   width: 100%;
-  background-image: url(${waveImg});
+  background-image: url(${({ theme }) => theme === LightTheme ? footerLight : footerDark});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
 export const SocialsLink = styled.a`
-  color: ${DarkTheme.colors.black};
+  color: ${({ theme }) => theme.colors.heroText};
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
   &:hover {
     transition: all 0.1s ease-in-out;
-    color: ${DarkTheme.colors.white};
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -34,7 +37,6 @@ export const Line = styled.hr`
 
 export const Copyright = styled.p`
   color: ${DarkTheme.colors.black};
-  // font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
 `;
 

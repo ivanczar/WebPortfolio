@@ -1,28 +1,23 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-// import Dropdown from './Dropdown';
+import Dropdown from './Dropdown';
 import {
   Nav,
   NavbarContainer,
-  // NavLogo,
   NavMenu,
   MobileIcon,
   NavItem,
   NavLinks,
   NavBtn,
   NavBtnLink,
-  DriveIcon,
+  ExternalLinkIcon,
 } from './NavbarElements';
-// import { animateScroll as scroll } from "react-scroll";
-// const scrollUp = () => {
-// scroll.scrollToTop();
-// }
-const NavbarView = ({ toggle }) => {
+
+const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          {/* <Dropdown/> */}
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -36,7 +31,7 @@ const NavbarView = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Home
+                {isEnglish ? 'Home' : 'Inicio'}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -46,43 +41,36 @@ const NavbarView = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
+                
               >
-                About
-              </NavLinks>
-            </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                to='work'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
-              >
-                Work
+                {isEnglish ? 'About' : 'Acerca de mí'}
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to='contact'
+                to='projects'
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
-                >
-                Contact
+              >
+                {isEnglish ? 'Projects' : 'Proyectos'}
               </NavLinks>
-            </NavItem> */}
+            </NavItem>
           </NavMenu>
+            <Dropdown
+              toggleTheme={toggleTheme}
+              isDark={isDark}
+              isEnglish={isEnglish}
+              toggleLang={toggleLang}
+            />
           <NavBtn>
             <NavBtnLink
               href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
               target='_blank'
             >
-              Resume (PDF)
-              <DriveIcon />
+              CV
+              <ExternalLinkIcon />
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>

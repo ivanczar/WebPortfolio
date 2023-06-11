@@ -1,35 +1,25 @@
 import styled from 'styled-components';
-import { DarkTheme } from '../../themes';
 
 export const InfoContainer = styled.div`
-  color: ${DarkTheme.colors.white};
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
 
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
+  background: ${({ theme }) => theme.colors.secondary};
+  padding: 10rem 23rem;
+  @media screen and (max-width: 780px) {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
-export const InfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  height: 900px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-  padding: 20px;
-`;
 
 export const Heading = styled.h1`
   font-size: 150px;
-  /* line-height: ; */
   font-weight: 600;
-  color: ${({ lightText }) =>
-    lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
-  font-family: ${DarkTheme.fonts.roboto};
+
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
     font-size: 50px;
@@ -41,12 +31,12 @@ export const Subtitle = styled.p`
   display: flex;
   font-size: 25px;
   line-height: 1cm;
-  /* line-height: 24px; */
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
-  text-align: justify;
+  color: ${({ theme }) => theme.colors.text};
+  text-align: left;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: ${DarkTheme.fonts.titillium};
+  margin-top: 3rem;
+  font-family: ${({ theme }) => theme.fonts.roboto};
 `;
 
 export const ProfilePicWrapper = styled.div`
@@ -73,8 +63,7 @@ export const ProfilePic = styled.img`
 `;
 
 export const TechWrapper = styled.div`
-  margin-top: 5rem;
-  align-self: center;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -83,15 +72,12 @@ export const TechWrapper = styled.div`
   height: 3.5rem;
   width: 50%;
   border-radius: 10px;
+  color: ${({ theme }) => theme.colors.text};
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     width: 100%;
     height: 5rem;
-
-
-
   }
 `;
-

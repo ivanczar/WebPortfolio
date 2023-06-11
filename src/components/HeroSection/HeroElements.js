@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { DarkTheme } from '../../themes';
+import { DarkTheme, LightTheme } from '../../themes';
 import { Link as LinkS } from 'react-scroll';
-import blobsDesk from '../../assets/images/hero/blob-scene-haikei1.svg';
-import blobsMobile from '../../assets/images/hero/blob-scene-haikei-mobile.svg';
+import blobsDesk from '../../assets/images/hero/headerDark.svg';
+import blobsDeskLight from '../../assets/images/hero/headerLight.svg';
+import blobsMobile from '../../assets/images/hero/mobileHeaderDark.svg';
+import blobsMobileLight from '../../assets/images/hero/mobileHeaderLight.svg'
 
 export const HeroContainer = styled.div`
-  /* background: ${DarkTheme.colors.black}; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +14,12 @@ export const HeroContainer = styled.div`
   height: 900px;
   position: relative;
   z-index: 1;
-  background-image: url(${blobsDesk});
+  background-image: url(${({ theme }) => theme === LightTheme ? blobsDeskLight : blobsDesk});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 480px) {
-    background-image: url(${blobsMobile});
+    background-image: url(${({ theme }) => theme === LightTheme ? blobsMobileLight : blobsMobile});
   }
 `;
 
@@ -33,26 +34,24 @@ export const HeroContent = styled.div`
   margin-bottom: 10%;
 `;
 
-
 export const HeroH1 = styled.h1`
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.heroText};
   font-size: 100px;
   text-align: center;
-  font-family: ${DarkTheme.fonts.roboto};
+  font-family: ${({ theme }) => theme.fonts.roboto};
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 52px;
   }
-
 `;
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.heroText};
   font-size: 30px;
   text-align: center;
   max-width: 600px;
@@ -86,7 +85,7 @@ export const SocialsIcons = styled.div`
 export const SocialsText = styled.p`
   padding-top: 10px;
   font-size: 1rem;
-  color: ${DarkTheme.colors.purple};
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 480px) {
@@ -95,7 +94,7 @@ export const SocialsText = styled.p`
 `;
 
 export const SocialsLink = styled.a`
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.icons};
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
@@ -106,11 +105,11 @@ export const SocialsLink = styled.a`
   }
   &:hover {
     transition: all 0.1s ease-in-out;
-    color: ${DarkTheme.colors.purple};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 `;
 export const NavLinks = styled(LinkS)`
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.icons};
   /* display: flex; */
   /* align-items: center; */
   text-decoration: none;
@@ -120,10 +119,11 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: ${DarkTheme.colors.purple};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 
   &.active {
-    border-bottom: 3px solid ${DarkTheme.colors.purple};
+    border-bottom: 3px solid   color: ${({ theme }) => theme.colors.primary};
+
   }
 `;

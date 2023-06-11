@@ -1,32 +1,21 @@
-import React from "react";
+import React from 'react';
 import {
   DropdownContainer,
   DropdownBtn,
-  ItemsWrapper,
-  Item,
-  GlobeIcon,
-} from "./DropdownElements";
-import { useState } from "react";
+  LightIcon,
+  DarkIcon,
+} from './DropdownElements';
 
-
-
-
-
-const DropdownView = () => {
-    const [show, setShow] = useState(false);
-    const toggle = () => {
-        setShow(!show);
-      };
+const DropdownView = ({ toggleTheme, isDark, isEnglish, toggleLang }) => {
   return (
     <>
       <DropdownContainer>
-        <DropdownBtn onClick={toggle}>
-            <GlobeIcon/>
+        <DropdownBtn onClick={toggleTheme}>
+          {isDark ? <LightIcon /> : <DarkIcon />}
         </DropdownBtn>
-        <ItemsWrapper show={show}>
-          <Item onClick={toggle}>English</Item>
-          <Item onClick={toggle}>Spanish</Item>
-        </ItemsWrapper>
+        <DropdownBtn onClick={toggleLang}>
+          {isEnglish ? <p>ES</p> : <p>EN</p>}
+        </DropdownBtn>
       </DropdownContainer>
     </>
   );

@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import { DarkTheme } from "../../themes";
-import {FaExternalLinkAlt} from "react-icons/fa";
+import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
+import { DarkTheme } from '../../themes';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export const Nav = styled.nav`
-  background: ${DarkTheme.colors.nav};
+  background: ${({ theme }) => theme.colors.nav};
+
   height: 80px;
   display: flex;
   justify-content: center;
@@ -20,15 +20,18 @@ export const Nav = styled.nav`
   }
 `;
 
-
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 80px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 export const NavLogo = styled(LinkS)`
@@ -55,7 +58,7 @@ export const MobileIcon = styled.div`
     transform: translate (-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${DarkTheme.colors.white};
+    color: ${({ theme }) => theme.colors.text};
   }
 `;
 
@@ -64,7 +67,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 6rem;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -75,7 +78,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -84,12 +87,12 @@ export const NavLinks = styled(LinkS)`
   font-family: ${DarkTheme.fonts.roboto};
   cursor: pointer;
 
-  &:hover{
-    color: ${DarkTheme.colors.purple}
+  &:hover {
+    color: ${DarkTheme.colors.purple};
   }
 
   &.active {
-    border-bottom: 3px solid ${DarkTheme.colors.purple};
+    border-bottom: 3px solid ${({ theme }) => theme.colors.text};
   }
 `;
 
@@ -99,16 +102,14 @@ export const NavBtn = styled.nav`
 
   @media screen and (max-width: 768px) {
     display: none;
-  } 
-  
+  }
 `;
 export const NavBtnLink = styled.a`
-
   border-radius: 5px;
-  background: ${DarkTheme.colors.purple};
+  background: ${({ theme }) => theme.colors.navButton};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   font-family: ${DarkTheme.fonts.roboto};
   font-size: 16px;
   outline: none;
@@ -119,13 +120,12 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    background: ${DarkTheme.colors.white};
-    color: ${DarkTheme.colors.black};
+    background: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 `;
 
-export const DriveIcon = styled(FaExternalLinkAlt)`
+export const ExternalLinkIcon = styled(FaExternalLinkAlt)`
   margin-left: 10px;
-margin-bottom: -2px;
-
+  margin-bottom: -2px;
 `;

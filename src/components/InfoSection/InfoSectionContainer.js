@@ -1,9 +1,9 @@
 import React from 'react'
 import InfoSectionView from './InfoSectionView'
 
-const InfoSectionContainer = () => {
+const InfoSectionContainer = ({isEnglish}) => {
   return (
-<InfoSectionView/>
+<InfoSectionView isEnglish={isEnglish}/>
 
   )
 }

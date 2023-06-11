@@ -1,14 +1,13 @@
-//
-// #5865F2
 export const DarkTheme = {
   colors: {
-    purple: '#4272f5',
-    black: '#001220',
-    nav: '#001220',
-    grey: '#001220',
-    white: '#fff',
-    cardHeader: '#d1d1d1',
-    cardBackground: '#002233',
+
+    primary: '#4272f5',
+    nav:'#001220',
+    secondary: '#001220',
+    icons: '#fff',
+    text: '#fff',
+    heroText: '#fff',
+    navButton: '#2A78EB',
   },
   fonts: {
     roboto: "'Roboto', sans-serif",
@@ -18,13 +17,13 @@ export const DarkTheme = {
 };
 export const LightTheme = {
   colors: {
-    purple: '#32a852',
-    black: '#fff',
-    nav: '#0c0c0c',
-    grey: '#0c0c0c',
-    white: '#fff',
-    cardHeader: '#d1d1d1',
-    cardBackground: '#1d1d1d',
+    primary: '#00386B',
+    secondary: '#2A78EB',
+    nav:'#00386B',
+    icons: '#00386B',
+    text: '#ffffff',
+    navButton: '#2A78EB',
+    heroText: '#00386B',
   },
   fonts: {
     roboto: "'Roboto', sans-serif",
