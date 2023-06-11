@@ -18,7 +18,7 @@ export const HeroContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     background-image: url(${({ theme }) => theme === LightTheme ? blobsMobileLight : blobsMobile});
   }
 `;

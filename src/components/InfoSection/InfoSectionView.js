@@ -3,10 +3,7 @@ import {
   InfoContainer,
   Heading,
   Subtitle,
-  ProfilePicWrapper,
   TechWrapper,
-
-  // ArrowPic,
 } from './InfoElements';
 import { FaReact } from 'react-icons/fa';
 import { FaJava } from 'react-icons/fa';
@@ -21,14 +18,6 @@ const InfoSection = ({ isEnglish }) => {
   return (
     <>
       <InfoContainer id='about'>
-        {/* <InfoWrapper> */}
-          <ProfilePicWrapper
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 1 }}
-          ></ProfilePicWrapper>
           <Heading
             as={motion.div}
             initial={{ opacity: 0 }}
@@ -86,7 +75,6 @@ const InfoSection = ({ isEnglish }) => {
             <DiDocker />
             <SiGnubash />
           </TechWrapper>
-        {/* </InfoWrapper> */}
       </InfoContainer>
     </>
   );

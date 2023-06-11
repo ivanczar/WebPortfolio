@@ -2,12 +2,9 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   background: ${({ theme }) => theme.colors.secondary};
-  padding: 10rem 23rem;
-  @media screen and (max-width: 768px) {
+  padding: 10rem 11rem;
+  @media screen and (max-width: 780px) {
     padding: 3rem 3rem;
-    display: flex;
-    flex-direction: column;
-
   }
 `;
 
@@ -27,4 +24,8 @@ export const CardsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  margin: 2rem 0;
+  
 `;

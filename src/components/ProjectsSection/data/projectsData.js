@@ -9,7 +9,7 @@ export const projects = [
   {
     title: 'CSEA Website',
     chips: ['NextJS', 'CLEAN Architecture', 'MongoDB'],
-    link: 'csea.co.nz',
+    link: 'https://csea.co.nz',
     description:
       'Developed a website for the Computer Science and Engineering Association (CSEA) at the Auckland Univeristy of Technology. The website is built using NextJS and is hosted on a DigitalOcean droplet. The website is currently in development and will be released soon.',
   },

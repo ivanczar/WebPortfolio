@@ -5,12 +5,13 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 17rem;
-  width: 30rem;
+  min-width: 30rem;
+  max-width: 10rem;
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 10px;
   padding: 2rem;
   margin-top: 4rem;
-  margin-right: 4rem;
+  // margin-right: 4rem;
 
   @media screen and (max-width: 768px) {
     min-width: 100%;

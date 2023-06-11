@@ -41,7 +41,6 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                
               >
                 {isEnglish ? 'About' : 'Acerca de mí'}
               </NavLinks>
@@ -58,12 +57,12 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-            <Dropdown
-              toggleTheme={toggleTheme}
-              isDark={isDark}
-              isEnglish={isEnglish}
-              toggleLang={toggleLang}
-            />
+          <Dropdown
+            toggleTheme={toggleTheme}
+            isDark={isDark}
+            isEnglish={isEnglish}
+            toggleLang={toggleLang}
+          />
           <NavBtn>
             <NavBtnLink
               href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
