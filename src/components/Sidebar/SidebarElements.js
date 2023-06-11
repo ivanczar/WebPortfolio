@@ -21,7 +21,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Icon = styled.div`
@@ -35,7 +35,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -86,7 +86,7 @@ export const SidebarRoute = styled.a`
     color: ${({ theme }) => theme.colors.primary};
   }
 `;
-export const DriveIcon = styled(FaExternalLinkAlt)`
+export const ExternalLinkIcon = styled(FaExternalLinkAlt)`
   margin-left: 10px;
   margin-bottom: -2px;
 `;

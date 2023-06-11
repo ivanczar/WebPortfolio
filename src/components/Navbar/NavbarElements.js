@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 import { DarkTheme } from '../../themes';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -75,8 +74,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-color: ${({ theme }) => theme.colors.text};
-display: flex;
+  color: ${({ theme }) => theme.colors.text};
+  display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 3rem;
@@ -90,7 +89,6 @@ display: flex;
 
   &.active {
     border-bottom: 3px solid ${({ theme }) => theme.colors.text};
-    
   }
 `;
 
@@ -123,7 +121,7 @@ export const NavBtnLink = styled.a`
   }
 `;
 
-export const DriveIcon = styled(FaExternalLinkAlt)`
+export const ExternalLinkIcon = styled(FaExternalLinkAlt)`
   margin-left: 10px;
   margin-bottom: -2px;
 `;

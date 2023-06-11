@@ -4,25 +4,21 @@ import Dropdown from './Dropdown';
 import {
   Nav,
   NavbarContainer,
-  // NavLogo,
   NavMenu,
   MobileIcon,
   NavItem,
   NavLinks,
   NavBtn,
   NavBtnLink,
-  DriveIcon,
+  ExternalLinkIcon,
 } from './NavbarElements';
-// import { animateScroll as scroll } from "react-scroll";
-// const scrollUp = () => {
-// scroll.scrollToTop();
-// }
+
 const NavbarView = ({ toggle, toggleTheme, isDark }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <Dropdown toggleTheme={toggleTheme} isDark={isDark}/>
+          <Dropdown toggleTheme={toggleTheme} isDark={isDark} />
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -51,30 +47,6 @@ const NavbarView = ({ toggle, toggleTheme, isDark }) => {
                 About
               </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                to='work'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
-              >
-                Work
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to='contact'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
-                >
-                Contact
-              </NavLinks>
-            </NavItem> */}
           </NavMenu>
           <NavBtn>
             <NavBtnLink
@@ -82,7 +54,7 @@ const NavbarView = ({ toggle, toggleTheme, isDark }) => {
               target='_blank'
             >
               Resume (PDF)
-              <DriveIcon />
+              <ExternalLinkIcon />
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>

@@ -37,7 +37,6 @@ export const Line = styled.hr`
 
 export const Copyright = styled.p`
   color: ${DarkTheme.colors.black};
-  // font-weight: bold;
   font-family: ${DarkTheme.fonts.roboto};
 `;
 

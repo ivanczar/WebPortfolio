@@ -8,7 +8,7 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
-  DriveIcon
+  ExternalLinkIcon,
 } from './SidebarElements';
 const SidebarView = ({ isOpen, toggle }) => {
   return (
@@ -26,8 +26,6 @@ const SidebarView = ({ isOpen, toggle }) => {
               {' '}
               About
             </SidebarLink>
-            {/* <SidebarLink to="work" onClick={toggle}>Work</SidebarLink>
-            <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink> */}
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute
@@ -35,7 +33,7 @@ const SidebarView = ({ isOpen, toggle }) => {
               target='_blank'
             >
               Resume (PDF)
-              <DriveIcon />
+              <ExternalLinkIcon />
             </SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>

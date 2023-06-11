@@ -1,5 +1,3 @@
-//
-// #5865F2
 export const DarkTheme = {
   colors: {
 

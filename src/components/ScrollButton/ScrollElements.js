@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import { DarkTheme } from "../../themes";
 
 export const Button = styled(LinkS)`
   position: fixed;
