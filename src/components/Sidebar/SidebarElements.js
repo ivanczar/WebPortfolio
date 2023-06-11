@@ -67,7 +67,7 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SidebarRoute = styled.a`
-  border-radius: 50px;
+  border-radius: 5px;
   background: ${({ theme }) => theme.colors.primary};
   white-space: nowrap;
   padding: 16px 64px;

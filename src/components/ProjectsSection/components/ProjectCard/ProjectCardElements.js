@@ -11,6 +11,11 @@ export const CardContainer = styled.div`
   padding: 2rem;
   margin-top: 4rem;
   margin-right: 4rem;
+
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+    height: 100%;
+  }
 `;
 
 export const TitleLinkWrapper = styled.div`
@@ -35,6 +40,10 @@ export const ChipsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
+  @media screen and (max-width: 480px) {
+    overflow: scroll;
+
+  }
 `;
 
 export const TextWrapper = styled.div`

@@ -8,7 +8,7 @@ export const DropdownContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 24px;
+  margin-right: 24px;
 
   @media screen and (max-width: 768px) {
     justify-content: space-between;

@@ -19,13 +19,17 @@ const SidebarView = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to='home' onClick={toggle}>
+            <SidebarLink to='home' onClick={toggle} offset={-80}>
               Home
             </SidebarLink>
-            <SidebarLink to='about' onClick={toggle}>
+            <SidebarLink to='about' onClick={toggle} offset={-80}>
               {' '}
               About
             </SidebarLink>
+          <SidebarLink to='projects' onClick={toggle} offset={-80}>
+            {' '}
+            Projects
+          </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute
