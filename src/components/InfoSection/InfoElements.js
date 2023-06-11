@@ -3,8 +3,7 @@ import { DarkTheme } from '../../themes';
 
 export const InfoContainer = styled.div`
   color: ${DarkTheme.colors.white};
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#001220')};
-
+  background: ${({ theme }) => theme.colors.secondary};
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -25,10 +24,8 @@ export const InfoWrapper = styled.div`
 
 export const Heading = styled.h1`
   font-size: 150px;
-  /* line-height: ; */
   font-weight: 600;
-  color: ${({ lightText }) =>
-    lightText ? DarkTheme.colors.black : DarkTheme.colors.purple};
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${DarkTheme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
@@ -42,8 +39,8 @@ export const Subtitle = styled.p`
   font-size: 25px;
   line-height: 1cm;
   /* line-height: 24px; */
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
-  text-align: justify;
+  color: ${({ theme }) => theme.colors.text};
+  text-align: left;
   margin-left: 10px;
   margin-right: 10px;
   font-family: ${DarkTheme.fonts.titillium};
@@ -73,8 +70,7 @@ export const ProfilePic = styled.img`
 `;
 
 export const TechWrapper = styled.div`
-  margin-top: 5rem;
-  align-self: center;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -83,6 +79,7 @@ export const TechWrapper = styled.div`
   height: 3.5rem;
   width: 50%;
   border-radius: 10px;
+  color: ${({ theme }) => theme.colors.text};
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {

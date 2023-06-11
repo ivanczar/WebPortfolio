@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { FaGlobeAmericas } from "react-icons/fa";
+import { MdOutlineDarkMode } from "react-icons/md";
+import { BsSun } from "react-icons/bs";
+
 import { DarkTheme } from "../../../themes";
 
 export const DropdownContainer = styled.div``;
@@ -9,7 +11,7 @@ export const DropdownBtn = styled.button`
   font-size: 16px;
   border: none;
   outline: none;
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   padding: 14px 16px;
   background-color: inherit;
   position: relative;
@@ -20,27 +22,14 @@ export const DropdownBtn = styled.button`
   }
 `;
 
-export const GlobeIcon = styled(FaGlobeAmericas)`
+export const DarkIcon = styled(MdOutlineDarkMode)`
   font-size: 1.3rem;
+
+`;
+export const LightIcon = styled(BsSun)`
+  font-size: 1.3rem;
+  
 `;
 
-export const ItemsWrapper = styled.div`
-  display: ${(props) => (props.show ? "block" : "none")};
-  position: relative;
-  background-color: ${DarkTheme.colors.black};
-  z-index: 1;
-`;
 
-export const Item = styled.a`
-  float: none;
-  color: ${DarkTheme.colors.white};
-  padding: 10px 14px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
 
-  &:hover {
-    cursor: pointer;
-    color: ${DarkTheme.colors.purple};
-  }
-`;

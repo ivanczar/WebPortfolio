@@ -4,29 +4,33 @@ import Sidebar from '../../components/Sidebar';
 import { useState } from 'react';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
-import ProjectsSection from '../../components/ProjectsSection';
-import ContactSection from '../../components/ContactSection';
 import FooterSection from '../../components/FooterSection';
 import ScrollButton from '../../components/ScrollButton';
 import { ThemeProvider } from 'styled-components';
+import { DarkTheme, LightTheme } from '../../themes';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+  };
+
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <HeroSection />
-      <InfoSection />
-      {/* <ProjectsSection /> */}
-      {/* <ContactSection /> */}
-      <FooterSection />
-      <ScrollButton />
+      <ThemeProvider theme={isDark ? DarkTheme : LightTheme}>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} toggleTheme={toggleTheme} isDark={isDark}/>
+        <HeroSection />
+        <InfoSection />
+        <FooterSection />
+        <ScrollButton />
+      </ThemeProvider>
     </>
   );
 };

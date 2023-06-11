@@ -1,27 +1,27 @@
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import { DarkTheme } from "../../themes";
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
+import { Link as LinkS } from 'react-scroll';
+import { DarkTheme } from '../../themes';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: ${DarkTheme.colors.black};
+  background: ${({ theme }) => theme.colors.secondary};
   display: grid;
   align-items: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
 
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0%')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: ${DarkTheme.colors.white};
+color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Icon = styled.div`
@@ -35,7 +35,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-  color: ${DarkTheme.colors.white};
+color: ${({ theme }) => theme.colors.text};
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -57,7 +57,7 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   cursor: pointer;
   font-family: ${DarkTheme.fonts.roboto};
 `;
@@ -66,12 +66,12 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled.a`
   border-radius: 50px;
-  background: ${DarkTheme.colors.purple};
+  background: ${({ theme }) => theme.colors.primary};
   white-space: nowrap;
   padding: 16px 64px;
-  color: ${DarkTheme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   font-size: 16px;
   outline: none;
   border: none;
@@ -82,7 +82,11 @@ export const SidebarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${DarkTheme.colors.white};
-    color: ${DarkTheme.colors.purple};
+    background: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.primary};
   }
+`;
+export const DriveIcon = styled(FaExternalLinkAlt)`
+  margin-left: 10px;
+  margin-bottom: -2px;
 `;

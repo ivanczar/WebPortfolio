@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SidebarContainer,
   Icon,
@@ -8,8 +8,9 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
-} from "./SidebarElements";
-const SidebarView = ({isOpen, toggle}) => {
+  DriveIcon
+} from './SidebarElements';
+const SidebarView = ({ isOpen, toggle }) => {
   return (
     <>
       <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -18,13 +19,24 @@ const SidebarView = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="home" onClick={toggle}>Home</SidebarLink>
-            <SidebarLink to="about" onClick={toggle}> About</SidebarLink>
+            <SidebarLink to='home' onClick={toggle}>
+              Home
+            </SidebarLink>
+            <SidebarLink to='about' onClick={toggle}>
+              {' '}
+              About
+            </SidebarLink>
             {/* <SidebarLink to="work" onClick={toggle}>Work</SidebarLink>
             <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink> */}
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/IvanCzar_Resume.pdf" target="_blank" download>Resume (PDF)</SidebarRoute>
+            <SidebarRoute
+              href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
+              target='_blank'
+            >
+              Resume (PDF)
+              <DriveIcon />
+            </SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

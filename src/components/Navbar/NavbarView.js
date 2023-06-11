@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-// import Dropdown from './Dropdown';
+import Dropdown from './Dropdown';
 import {
   Nav,
   NavbarContainer,
@@ -17,12 +17,12 @@ import {
 // const scrollUp = () => {
 // scroll.scrollToTop();
 // }
-const NavbarView = ({ toggle }) => {
+const NavbarView = ({ toggle, toggleTheme, isDark }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          {/* <Dropdown/> */}
+          <Dropdown toggleTheme={toggleTheme} isDark={isDark}/>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

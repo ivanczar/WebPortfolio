@@ -10,7 +10,7 @@ export const Button = styled(LinkS)`
   font-size: 3rem;
   z-index: 1;
   cursor: pointer;
-  color: ${DarkTheme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   opacity: 0.6;
 
   &:hover {

@@ -4,7 +4,6 @@ import {
   ProjectsContainer,
   Heading,
   CardsContainer,
-  // ChipsContainer,
   ProjectsWrapper,
 } from './ProjectsSectionElements';
 import Card from './components/CardComponent/Card';
@@ -12,7 +11,6 @@ import Card from './components/CardComponent/Card';
 import shlogo from '../../assets/images/projects/sporthub.png';
 import cologo from '../../assets/images/projects/cabsonline.png';
 import bjlogo from '../../assets/images/projects/blackjack.png';
-import wplogo from '../../assets/images/about/profilePic.jpeg';
 
 const ProjectsSectionView = () => {
   const shIcons = [
@@ -78,7 +76,7 @@ const ProjectsSectionView = () => {
               icons={bjIcons}
             />
             <Card
-              logo={wplogo}
+              // logo={wplogo}
               git={'https://github.com/ivanczar/ivanczar.github.io'}
               title={'Website Portfolio'}
               text={

@@ -1,9 +1,9 @@
 import React from "react";
 import DropdownView from "./DropdownView";
 
-const DropdownContainer = ({ toggle }) => {
+const DropdownContainer = ({ toggleTheme, isDark}) => {
 
-  return <DropdownView toggle={toggle} />
+  return <DropdownView toggleTheme={toggleTheme} isDark={isDark} />
 };
 
 export default DropdownContainer;

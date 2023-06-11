@@ -4,13 +4,11 @@ import {
   InfoWrapper,
   Heading,
   Subtitle,
-  ProfilePic,
   ProfilePicWrapper,
   TechWrapper,
 
   // ArrowPic,
 } from './InfoElements';
-import Picture from '../../assets/images/about/profilePic.jpeg';
 import { FaReact } from 'react-icons/fa';
 import { FaJava } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
@@ -33,7 +31,7 @@ const InfoSection = () => {
             transition={{delay: 1}}
           >
             {/* <ArrowPic src={Arrow}/> */}
-            <ProfilePic src={Picture} />
+            {/* <ProfilePic src={Picture} /> */}
           </ProfilePicWrapper>
           <Heading
             as={motion.div}
