@@ -18,7 +18,6 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
     <>
       <Nav>
         <NavbarContainer>
-          
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -42,9 +41,19 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
               >
                 {isEnglish ? 'About' : 'Acerca de mí'}
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to='projects'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+              >
+                {isEnglish ? 'Projects' : 'Proyectos'}
               </NavLinks>
             </NavItem>
           </NavMenu>
@@ -55,7 +64,6 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
             >
               CV
               <ExternalLinkIcon />
-              
             </NavBtnLink>
           </NavBtn>
           <Dropdown

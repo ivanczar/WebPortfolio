@@ -1,32 +1,25 @@
 import styled from 'styled-components';
-import { DarkTheme } from '../../themes';
 
 export const InfoContainer = styled.div`
-  color: ${DarkTheme.colors.white};
+
   background: ${({ theme }) => theme.colors.secondary};
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
+  padding: 10rem 23rem;
+  @media screen and (max-width: 780px) {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
-export const InfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  height: 900px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-  padding: 20px;
-`;
 
 export const Heading = styled.h1`
   font-size: 150px;
   font-weight: 600;
+
   color: ${({ theme }) => theme.colors.primary};
-  font-family: ${DarkTheme.fonts.roboto};
+  font-family: ${({ theme }) => theme.fonts.roboto};
   @media screen and (max-width: 480px) {
     padding-bottom: 20px;
     font-size: 50px;
@@ -38,12 +31,12 @@ export const Subtitle = styled.p`
   display: flex;
   font-size: 25px;
   line-height: 1cm;
-  /* line-height: 24px; */
   color: ${({ theme }) => theme.colors.text};
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: ${DarkTheme.fonts.titillium};
+  margin-top: 3rem;
+  font-family: ${({ theme }) => theme.fonts.roboto};
 `;
 
 export const ProfilePicWrapper = styled.div`
@@ -86,9 +79,5 @@ export const TechWrapper = styled.div`
     font-size: 2rem;
     width: 100%;
     height: 5rem;
-
-
-
   }
 `;
-

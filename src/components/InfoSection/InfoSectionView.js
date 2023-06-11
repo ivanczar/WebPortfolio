@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   InfoContainer,
-  InfoWrapper,
   Heading,
   Subtitle,
   ProfilePicWrapper,
@@ -22,7 +21,7 @@ const InfoSection = ({ isEnglish }) => {
   return (
     <>
       <InfoContainer id='about'>
-        <InfoWrapper>
+        {/* <InfoWrapper> */}
           <ProfilePicWrapper
             as={motion.div}
             initial={{ opacity: 0 }}
@@ -87,7 +86,7 @@ const InfoSection = ({ isEnglish }) => {
             <DiDocker />
             <SiGnubash />
           </TechWrapper>
-        </InfoWrapper>
+        {/* </InfoWrapper> */}
       </InfoContainer>
     </>
   );

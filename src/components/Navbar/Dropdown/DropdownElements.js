@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { BsSun } from "react-icons/bs";
+import styled from 'styled-components';
+import { MdOutlineDarkMode } from 'react-icons/md';
+import { BsSun } from 'react-icons/bs';
 
-import { DarkTheme } from "../../../themes";
+import { DarkTheme } from '../../../themes';
 
 export const DropdownContainer = styled.div`
   display: flex;
@@ -10,15 +10,10 @@ export const DropdownContainer = styled.div`
   align-items: center;
   margin-left: 24px;
 
-
   @media screen and (max-width: 768px) {
     justify-content: space-between;
     margin-left: 0;
-
   }
-
-
-
 `;
 
 export const DropdownBtn = styled.button`
@@ -38,12 +33,7 @@ export const DropdownBtn = styled.button`
 
 export const DarkIcon = styled(MdOutlineDarkMode)`
   font-size: 1.3rem;
-
 `;
 export const LightIcon = styled(BsSun)`
   font-size: 1.3rem;
-
 `;
-
-
-

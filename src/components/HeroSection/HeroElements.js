@@ -85,7 +85,7 @@ export const SocialsIcons = styled.div`
 export const SocialsText = styled.p`
   padding-top: 10px;
   font-size: 1rem;
-  color: ${({ theme }) => theme.colors.icons};
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${DarkTheme.fonts.roboto};
 
   @media screen and (max-width: 480px) {
