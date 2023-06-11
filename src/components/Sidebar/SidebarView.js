@@ -32,7 +32,7 @@ const SidebarView = ({ isOpen, toggle }) => {
               href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
               target='_blank'
             >
-              Resume (PDF)
+              CV
               <ExternalLinkIcon />
             </SidebarRoute>
           </SideBtnWrap>

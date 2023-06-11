@@ -13,12 +13,12 @@ import {
   ExternalLinkIcon,
 } from './NavbarElements';
 
-const NavbarView = ({ toggle, toggleTheme, isDark }) => {
+const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <Dropdown toggleTheme={toggleTheme} isDark={isDark} />
+          
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -32,7 +32,7 @@ const NavbarView = ({ toggle, toggleTheme, isDark }) => {
                 exact='true'
                 offset={-80}
               >
-                Home
+                {isEnglish ? 'Home' : 'Inicio'}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -44,7 +44,7 @@ const NavbarView = ({ toggle, toggleTheme, isDark }) => {
                 exact='true'
                 offset={-80}
               >
-                About
+                {isEnglish ? 'About' : 'Acerca de mí'}
               </NavLinks>
             </NavItem>
           </NavMenu>
@@ -53,10 +53,17 @@ const NavbarView = ({ toggle, toggleTheme, isDark }) => {
               href='https://drive.google.com/file/d/1MmZOX9T7ng9cm21bnEWueOiHbnN7da80/view?usp=sharing'
               target='_blank'
             >
-              Resume (PDF)
+              CV
               <ExternalLinkIcon />
+              
             </NavBtnLink>
           </NavBtn>
+          <Dropdown
+            toggleTheme={toggleTheme}
+            isDark={isDark}
+            isEnglish={isEnglish}
+            toggleLang={toggleLang}
+          />
         </NavbarContainer>
       </Nav>
     </>

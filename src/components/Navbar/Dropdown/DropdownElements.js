@@ -4,7 +4,22 @@ import { BsSun } from "react-icons/bs";
 
 import { DarkTheme } from "../../../themes";
 
-export const DropdownContainer = styled.div``;
+export const DropdownContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    margin-left: 0;
+
+  }
+
+
+
+`;
 
 export const DropdownBtn = styled.button`
   cursor: pointer;
@@ -15,7 +30,6 @@ export const DropdownBtn = styled.button`
   padding: 14px 16px;
   background-color: inherit;
   position: relative;
-  margin-top: 20px;
 
   &:hover {
     color: ${DarkTheme.colors.purple};
@@ -28,7 +42,7 @@ export const DarkIcon = styled(MdOutlineDarkMode)`
 `;
 export const LightIcon = styled(BsSun)`
   font-size: 1.3rem;
-  
+
 `;
 
 

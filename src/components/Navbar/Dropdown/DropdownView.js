@@ -1,21 +1,20 @@
-import React from "react";
+import React from 'react';
 import {
   DropdownContainer,
   DropdownBtn,
   LightIcon,
   DarkIcon,
-} from "./DropdownElements";
+} from './DropdownElements';
 
-
-const DropdownView = ({toggleTheme, isDark}) => {
-
+const DropdownView = ({ toggleTheme, isDark, isEnglish, toggleLang }) => {
   return (
     <>
       <DropdownContainer>
         <DropdownBtn onClick={toggleTheme}>
-          {
-            isDark ? <LightIcon/> : <DarkIcon/>
-          }
+          {isDark ? <LightIcon /> : <DarkIcon />}
+        </DropdownBtn>
+        <DropdownBtn onClick={toggleLang}>
+          {isEnglish ? <p>ES</p> : <p>EN</p>}
         </DropdownBtn>
       </DropdownContainer>
     </>

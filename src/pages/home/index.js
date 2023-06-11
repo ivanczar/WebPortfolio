@@ -12,6 +12,7 @@ import { DarkTheme, LightTheme } from '../../themes';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
+  const [isEnglish, setIsEnglish] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -21,13 +22,23 @@ const Home = () => {
     setIsDark(!isDark);
   };
 
+  const toggleLang = () => {
+    setIsEnglish(!isEnglish);
+  };
+
   return (
     <>
       <ThemeProvider theme={isDark ? DarkTheme : LightTheme}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} toggleTheme={toggleTheme} isDark={isDark}/>
-        <HeroSection />
-        <InfoSection />
+        <Navbar
+          toggle={toggle}
+          toggleTheme={toggleTheme}
+          isDark={isDark}
+          isEnglish={isEnglish}
+          toggleLang={toggleLang}
+        />
+        <HeroSection isEnglish={isEnglish} />
+        <InfoSection isEnglish={isEnglish} />
         <FooterSection />
         <ScrollButton />
       </ThemeProvider>
