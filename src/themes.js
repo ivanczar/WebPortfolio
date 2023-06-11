@@ -9,6 +9,7 @@ export const DarkTheme = {
     icons: '#fff',
     text: '#fff',
     heroText: '#fff',
+    navButton: '#2A78EB',
   },
   fonts: {
     roboto: "'Roboto', sans-serif",
@@ -23,6 +24,7 @@ export const LightTheme = {
     nav:'#00386B',
     icons: '#00386B',
     text: '#ffffff',
+    navButton: '#2A78EB',
     heroText: '#00386B',
   },
   fonts: {

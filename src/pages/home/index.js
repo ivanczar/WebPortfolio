@@ -11,7 +11,7 @@ import { DarkTheme, LightTheme } from '../../themes';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);

@@ -104,10 +104,10 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled.a`
   border-radius: 5px;
-  background: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.navButton};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${({ theme }) => theme.colors.nav};
+  color: ${({ theme }) => theme.colors.text};
   font-family: ${DarkTheme.fonts.roboto};
   font-size: 16px;
   outline: none;
@@ -118,8 +118,8 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    background: ${({ theme }) => theme.colors.secondary};
-    color: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 `;
 

@@ -4,6 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import blobsDesk from '../../assets/images/hero/headerDark.svg';
 import blobsDeskLight from '../../assets/images/hero/headerLight.svg';
 import blobsMobile from '../../assets/images/hero/mobileHeaderDark.svg';
+import blobsMobileLight from '../../assets/images/hero/mobileHeaderLight.svg'
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ export const HeroContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 480px) {
-    background-image: url(${blobsMobile});
+    background-image: url(${({ theme }) => theme === LightTheme ? blobsMobileLight : blobsMobile});
   }
 `;
 
@@ -37,14 +38,14 @@ export const HeroH1 = styled.h1`
   color: ${({ theme }) => theme.colors.heroText};
   font-size: 100px;
   text-align: center;
-  font-family: ${DarkTheme.fonts.roboto};
+  font-family: ${({ theme }) => theme.fonts.roboto};
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 52px;
   }
 `;
 
@@ -104,7 +105,7 @@ export const SocialsLink = styled.a`
   }
   &:hover {
     transition: all 0.1s ease-in-out;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 `;
 export const NavLinks = styled(LinkS)`
@@ -118,7 +119,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.navButton};
   }
 
   &.active {

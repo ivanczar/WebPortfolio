@@ -18,13 +18,13 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialsLink = styled.a`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.heroText};
   font-size: 2.5rem;
   text-decoration: none;
   padding: 0 1rem;
   &:hover {
     transition: all 0.1s ease-in-out;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.secondary};
   }
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
