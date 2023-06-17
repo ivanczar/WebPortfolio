@@ -26,10 +26,10 @@ const SidebarView = ({ isOpen, toggle }) => {
               {' '}
               About
             </SidebarLink>
-          <SidebarLink to='projects' onClick={toggle} offset={-80}>
-            {' '}
-            Projects
-          </SidebarLink>
+            <SidebarLink to='projects' onClick={toggle} offset={-80}>
+              {' '}
+              Projects
+            </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute

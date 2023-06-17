@@ -16,15 +16,15 @@ const Home = () => {
   const [isEnglish, setIsEnglish] = useState(true);
 
   const toggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    setIsDark((prev) => !prev);
   };
 
   const toggleLang = () => {
-    setIsEnglish(!isEnglish);
+    setIsEnglish((prev) => !prev);
   };
 
   return (

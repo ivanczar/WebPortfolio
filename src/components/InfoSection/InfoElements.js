@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-
   background: ${({ theme }) => theme.colors.secondary};
   padding: 10rem 11rem;
+  height: 100vh;
   @media screen and (max-width: 780px) {
     padding: 3rem 3rem;
     display: flex;
@@ -12,7 +12,6 @@ export const InfoContainer = styled.div`
     // align-items: center;
   }
 `;
-
 
 export const Heading = styled.h1`
   font-size: 10em;

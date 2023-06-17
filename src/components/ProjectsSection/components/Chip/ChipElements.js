@@ -4,7 +4,7 @@ export const ChipContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }) => theme.colors.primary};
+    // background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 15px;
     padding: 0.5rem;
     width: fit-content;

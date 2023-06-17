@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import blobsDesk from '../../assets/images/hero/headerDark.svg';
 import blobsDeskLight from '../../assets/images/hero/headerLight.svg';
 import blobsMobile from '../../assets/images/hero/mobileHeaderDark.svg';
-import blobsMobileLight from '../../assets/images/hero/mobileHeaderLight.svg'
+import blobsMobileLight from '../../assets/images/hero/mobileHeaderLight.svg';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -14,12 +14,14 @@ export const HeroContainer = styled.div`
   height: 900px;
   position: relative;
   z-index: 1;
-  background-image: url(${({ theme }) => theme === LightTheme ? blobsDeskLight : blobsDesk});
+  background-image: url(${({ theme }) =>
+    theme === LightTheme ? blobsDeskLight : blobsDesk});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 780px) {
-    background-image: url(${({ theme }) => theme === LightTheme ? blobsMobileLight : blobsMobile});
+    background-image: url(${({ theme }) =>
+      theme === LightTheme ? blobsMobileLight : blobsMobile});
   }
 `;
 
@@ -67,7 +69,7 @@ export const HeroP = styled.p`
 `;
 
 export const SocialsWrapper = styled.div`
-  margin-top: 40%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
