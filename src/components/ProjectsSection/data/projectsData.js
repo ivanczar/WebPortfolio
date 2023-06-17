@@ -11,7 +11,7 @@ export const projects = [
     chips: ['NextJS', 'SSR', 'SEO', 'MongoDB'],
     link: 'https://csea.co.nz',
     description:
-      'Developed a website for the Computer Science and Engineering Association (CSEA) at the Auckland Univeristy of Technology. The website is built using NextJS and is hosted on a DigitalOcean droplet. The website is currently in development and will be released soon.',
+      'Developed a website for the Computer Science and Engineering Association (CSEA) at Auckland University of Technology. The website is built using NextJS and is hosted on Vercel.',
   },
   {
     title: 'SportsHub',
