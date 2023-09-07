@@ -65,7 +65,7 @@ const NavbarView = ({ toggle, toggleTheme, isDark, isEnglish, toggleLang }) => {
           />
           <NavBtn>
             <NavBtnLink
-              href='https://drive.google.com/file/d/1zlnspDzMu733h6a3eSvcC7Yk3K52QBG7/view?usp=sharing'
+              href='https://drive.google.com/file/d/1plJ49wn4AoFci-A3j4sHOOVqFUZ7dDnR/view?usp=sharing'
               target='_blank'
             >
               CV
